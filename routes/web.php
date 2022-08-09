@@ -23,13 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', "WimaxController@index");
 
-Route::get('/pricing', function () {
-    return view('pricing');
-});
-
-Route::get('/blog', function () {
-    return view('blog');
-});
+Route::get('/pricing', 'WimaxController@pricing');
+Route::get('/blog', 'WimaxController@blog');
 
 
 

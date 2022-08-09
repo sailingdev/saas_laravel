@@ -153,4 +153,42 @@ class Helper
         return false;
     }
 
+
+    static function date_show($data){
+        if($data != ""){
+            if(!is_numeric($data)){
+                $data = strtotime($data);
+            }
+            if(Helper::get_option('format_date', 'd/m/Y') == 'd/m/Y' ){
+                return date( "d-m-Y" , $data);
+            }else{
+                return date( Helper::get_option('format_date', 'd/m/Y') , $data);
+            }
+        }else{
+            return false;
+        }
+    }
+
+    static function cut_text($text, $n = 280){
+        if(strlen($text) <= $n){
+            return $text;
+        }
+
+        $text= substr($text, 0, $n);
+        if($text[$n-1] == ' '){
+            return trim($text)."...";
+        }
+
+        $x  = explode(" ", $text);
+        $sz = sizeof($x);
+
+        if($sz <= 1){
+            return $text."...";
+        }
+
+        $x[$sz-1] = '';
+
+        return trim(implode(" ", $x))."...";
+    }
+
 }

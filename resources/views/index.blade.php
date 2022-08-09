@@ -1,6 +1,70 @@
 @extends('layouts.app')
-@section('content')
+@section("specific_css")
+    <style>
+        .welcome_text_area h2 {
+            color: #383838;
+            font-size: 40px;
+            font-weight: 700 !important;
+            margin-bottom: 0;
+        }
 
+        .welcome_text_area p{
+            color: #383838;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        .animation-text{
+            line-height: 1.3;
+        }
+
+        .hero-barishal.welcome_area .welcome_text_area {
+            padding-top: 90px;
+        }
+
+        .pr-main{
+            margin: 25px 0 0;
+        }
+
+        /* ==== Slider Style === */
+        .Modern-Slider .slick-dots li button{display:none;}
+        .Modern-Slider .item h5{
+            margin:0;
+            padding:0;
+            font:15px/30px RalewayR;
+            max-width:600px;
+            overflow:hidden;
+            height:60px;
+            animation:fadeOutRight 1s both;
+        }
+
+        .image-Slider .slick-dots li button{display:none;}
+        .image-Slider .item image{
+            margin:0;
+            padding:0;
+            max-width:600px;
+            overflow:hidden;
+            height:60px;
+            animation:fadeOutRight 1s both;
+        }
+
+        /*end slider*/
+
+        .flex-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+
+        .detail_box {
+            flex: 0 0 30%;
+            padding: 50px 0 0;
+        }
+    </style>
+@endsection
+
+@section('content')
     {{--Social media Key--}}
     <section class="hero-barishal welcome_area" id="home">
         <div class="container" style="height: 90%">
@@ -69,9 +133,7 @@
                                 </div>
                             </div>
                             <!-- // Item -->
-
                         </div>
-
                         <div class="pr-main">
                             <p data-wow-delay="0.3s">Post Planner helps you schedule the best content in your industry.</p>
                             <p class="" data-wow-delay="0.3s">Automatically.</p>
@@ -80,11 +142,86 @@
                             <a class="btn wimax-btn btn-2 mt-30 ml-2 wow fadeInUp" href="#features" data-wow-delay="0.5s">{{"Learn More"}}</a>
                         </div>
                     </div>
-
                 </div>
+
+
                 <div class="col-md-7" data-aos="fade-left">
                     <div class="welcome_area_thumb text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-1.png')}}" alt="">
+                        <div class="image-Slider">
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-1.png')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/home-hero-main.webp')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-8.jpg')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/coming-soon.png')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/thank-you.png')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/maintenence.jpg')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+{{--                            <div class="item">--}}
+{{--                                <div class="img-fill">--}}
+{{--                                    <div class="info">--}}
+{{--                                        <div>--}}
+{{--                                            <img width="600" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-3.png')}}" alt=""  />--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -203,7 +340,7 @@
                 </div>
             </div>
             <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
                     <div class="about_product_discription">
                         <div class="row">
                             <div class="col-12">
@@ -227,22 +364,10 @@
                                     <p>Organize your teams and work in private, dedicated Workspaces. Don't get your jobs and clients mixed up.</p>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="single_about_part" data-aos="fade-left">
-                                    <div class="feature_icon">
-                                        <i class="lni lni-text-format"></i>
-                                    </div>
-                                    <h6>Al Writer</h6>
-                                    <p>Write faster and better marketing copies, generate Hashtags among other things.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8 col-lg-4">
-                    <div class="about_product_thumb text-center my-5 my-lg-0" data-aos="zoom-in-up"><img src="{{ asset('themes/frontend/wimax/assets/img/bg-img/features-img.png')}}" alt=""></div>
-                </div>
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
                     <div class="about_product_discription">
                         <div class="row">
                             <div class="col-12">
@@ -264,6 +389,21 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                    <div class="about_product_discription">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="single_about_part" data-aos="fade-left">
+                                    <div class="feature_icon">
+                                        <i class="lni lni-text-format"></i>
+                                    </div>
+                                    <h6>Al Writer</h6>
+                                    <p>Write faster and better marketing copies, generate Hashtags among other things.</p>
+                                </div>
+                            </div>
                             <div class="col-12">
                                 <div class="single_about_part" data-aos="fade-right">
                                     <div class="feature_icon"><i class="lni lni-bar-chart"></i></div>
@@ -276,7 +416,8 @@
                 </div>
             </div>
         </div>
-        <div class="section_heading text-center" data-aos="fade-right">
+
+        <div class="section_heading text-center mt-50" data-aos="fade-right">
             <a class="btn wimax-btn btn-2" href="">See All Features</a>
         </div>
     </section>
@@ -450,8 +591,42 @@
     </div>
 @endsection
 
-@section('custom_js')
-    <script>
+@section('specific_js')
+<script>
+    $(document).ready(function ($){
+        $(".Modern-Slider").slick({
+            autoplay:true,
+            autoplaySpeed:3000,
+            speed:600,
+            slidesToShow:1,
+            slidesToScroll:1,
+            pauseOnHover:false,
+            dots:true,
+            pauseOnDotsHover:true,
+            cssEase:'linear',
+            // fade:true,
+            draggable:false,
+            prevArrow: false,
+            nextArrow: false,
+        });
 
-    </script>
+        $(".image-Slider").slick({
+            autoplay:true,
+            autoplaySpeed:6000,
+            speed:800,
+            slidesToShow:1,
+            slidesToScroll: 1,
+            pauseOnHover:false,
+            dots:true,
+            pauseOnDotsHover:true,
+            cssEase:'linear',
+            // fade:true,
+            draggable:false,
+            prevArrow: false,
+            nextArrow: false,
+            variableWidth: false,
+
+        });
+    })
+</script>
 @endsection

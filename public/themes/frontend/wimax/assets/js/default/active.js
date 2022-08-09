@@ -7,7 +7,7 @@
     // :: Preloader Active Code
     // ------------------------
     wimaxWindow.on('load', function () {
-        $('#preloader').fadeOut('slow', function () {
+        $('#preloader').fadeOut('fast', function () {
             $(this).remove();
         });
     });
@@ -227,7 +227,7 @@
     });
 
     $(".pricing-tab-switcher input").on("change", function(){
-        
+
         if($(this).is(':checked')){
             $(".annual_price").show();
             $(".monthly_price").hide();
