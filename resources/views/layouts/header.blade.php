@@ -4,7 +4,7 @@
         <div class="container">
             <div class="classy-nav-container breakpoint-off">
                 <nav class="classy-navbar justify-content-between" id="wimaxNav">
-                    <!-- Logo--><a class="nav-brand" href="<?php __( asset("") )?>"><img src="<?php __( Helper::get_option('website_black', asset("themes/backend/default/assets/img/logo-black.png")) )?>" alt=""></a>
+                    <!-- Logo--><a class="nav-brand" href="{{url("/")}}"><img src="{{asset("themes/backend/default/assets/img/logo12.png")}}" alt=""></a>
                     <!-- Navbar Toggler-->
                     <div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span></span></div>
                     <!-- Menu-->

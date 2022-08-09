@@ -169,7 +169,7 @@
       <div class="border-top"></div>
     </div>
     <section class="get-started-area section_padding_130_0">
-      <div class="container">       
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-sm-8 col-lg-6">
             <div class="section_heading text-center" data-aos="fade-left">
@@ -193,7 +193,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="work_process_area section_padding_130_80">
       <div class="container">
         <div class="row justify-content-center">
@@ -302,7 +302,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-sm-10 col-lg-8">
             <div class="accordion faq-accordian" id="faqAccordion">
-              
+
               <?php foreach ($faqs as $key => $faq): ?>
                 <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="card-header" id="heading<?php _e( $key )?>">

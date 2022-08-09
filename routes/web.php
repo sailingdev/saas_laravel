@@ -21,9 +21,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', "WimaxController@index");
 
 Route::get('/pricing', function () {
     return view('pricing');
