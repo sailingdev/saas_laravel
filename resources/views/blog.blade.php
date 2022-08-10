@@ -35,6 +35,43 @@
             border-color: #007bff;
         }
 
+        .pagination {
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            border-radius: 0.25rem;
+        }
+
+        .pagination .page-link {
+            padding: 0.5rem 1rem;
+            color: #020710;
+            border: 1px solid transparent;
+            font-size: 1rem;
+        }
+
+        .page-link:hover, .page-link:focus {
+            z-index: 2;
+            color: #4d4d62;
+            background-color: #c5c5d3;
+            border-color: transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .page-item.active .page-link {
+            z-index: 3;
+            color: #fff;
+            background-color: #53708e;
+            border-color: #4c6e8d;
+        }
+
+
+
+        ul.pagination{
+            justify-content: center!important;
+        }
 
     </style>
 @endsection
@@ -59,15 +96,18 @@
         <div class="container">
             <div class="row">
                 @if(isset($blogs))
+                    <div class="col-12 col-md-12 mb-15">
+                        {!! $blogs->render() !!}
+                    </div>
                     @foreach($blogs as $key => $blog)
                         <div class="col-12 col-md-6">
-                            <div class="single--post--area mb-30" style="background-image: url('{{asset('$blog->image')}}');">
+                            <div class="single--post--area mb-30" style="background-image: url('{{asset($blog->image)}}');">
                                 <!-- Post Content-->
                                 <div class="post-content d-flex justify-content-between">
                                     <div class="post-meta d-flex justify-content-between align-items-center">
                                         <a class="post-tag" href="#"></a>
                                         <span>
-                                            <i class="lni-timer"> </i> {{Helper::date_show($blog->changed)}}
+                                            <i class="lni-timer"> </i> {{Helper::timeAgo($blog->changed)}}
                                         </span>
                                     </div>
                                     <h2>{{Helper::cut_text($blog->name, 80)}}</h2>
@@ -77,7 +117,7 @@
                         </div>
                     @endforeach
 
-                        <div class="text-center" align="center">
+                        <div class="col-12 col-md-12">
                             {!! $blogs->render() !!}
                         </div>
                 @endif

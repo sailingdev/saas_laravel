@@ -25,7 +25,7 @@
                                     <a class="hover-underline-animation" href="{{url('pricing')}}">{{__("Pricing")}}</a>
                                 </li>
 
-                                <li class="{{Request::is("blog")?"current_page_item":""}}">
+                                <li class="{{Request::is("blog*")?"current_page_item":""}}">
                                     <a class="hover-underline-animation" href="{{url("blog")}}">Blog</a>
                                 </li>
 
@@ -38,14 +38,14 @@
                                 </li>
 
 
-                                <li class="language-box cn-dropdown-item"><a class="hover-underline-animation" href="#"><i class=""></i></a>
-                                    <ul class="dropdown">
-                                        <li>
-                                            <a class="dropdown-item actionItem" href="#" data-redirect=""><i class=""></i> English</a>
-                                        </li>
-                                    </ul>
-                                    <span class="dd-trigger"></span>
-                                </li>
+{{--                                <li class="language-box cn-dropdown-item"><a class="hover-underline-animation" href="#"><i class=""></i></a>--}}
+{{--                                    <ul class="dropdown">--}}
+{{--                                        <li>--}}
+{{--                                            <a class="dropdown-item actionItem" href="#" data-redirect=""><i class=""></i> English</a>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                    <span class="dd-trigger"></span>--}}
+{{--                                </li>--}}
 
                             </ul>
                             <!-- Login Button-->

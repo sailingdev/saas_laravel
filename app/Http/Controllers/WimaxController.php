@@ -18,8 +18,15 @@ class WimaxController extends Controller
         $data = array();
         return view('pricing', ['data'=>$data]);
     }
-    public function blog(Request $request){
-        $blogs = Blog::paginate(6);
-        return view ('blog', ['blogs' => $blogs]);
+
+
+    public function blog($id = "0"){
+        if ($id == "0"){
+            $blogs = Blog::paginate(6);
+            return view ('blog', ['blogs' => $blogs]);
+        }else{
+             $blog = Blog::where('slug', $id)->first();
+             return view('blog_detail', ['blog' => $blog]);
+        }
     }
 }

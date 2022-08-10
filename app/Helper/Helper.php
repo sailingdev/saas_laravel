@@ -191,4 +191,94 @@ class Helper
         return trim(implode(" ", $x))."...";
     }
 
+
+    static function timeAgo($time_ago)
+    {
+        $time_ago = strtotime($time_ago);
+        $cur_time   = time();
+        $time_elapsed   = $cur_time - $time_ago;
+        $seconds    = $time_elapsed ;
+        $minutes    = round($time_elapsed / 60 );
+        $hours      = round($time_elapsed / 3600);
+        $days       = round($time_elapsed / 86400 );
+        $weeks      = round($time_elapsed / 604800);
+        $months     = round($time_elapsed / 2600640 );
+        $years      = round($time_elapsed / 31207680 );
+        // Seconds
+        if($seconds <= 60){
+            return "just now";
+        }
+        //Minutes
+        else if($minutes <=60){
+            if($minutes==1){
+                return "one minute ago";
+            }
+            else{
+                return "$minutes minutes ago";
+            }
+        }
+        //Hours
+        else if($hours <=24){
+            if($hours==1){
+                return "an hour ago";
+            }else{
+                return "$hours hrs ago";
+            }
+        }
+        //Days
+        else if($days <= 7){
+            if($days==1){
+                return "yesterday";
+            }else{
+                return "$days days ago";
+            }
+        }
+        //Weeks
+        else if($weeks <= 4.3){
+            if($weeks==1){
+                return "a week ago";
+            }else{
+                return "$weeks weeks ago";
+            }
+        }
+        //Months
+        else if($months <=12){
+            if($months==1){
+                return "a month ago";
+            }else{
+                return "$months months ago";
+            }
+        }
+        //Years
+        else{
+            if($years==1){
+                return "one year ago";
+            }else{
+                return "$years years ago";
+            }
+        }
+    }
+
+
+    static function tz_list() {
+        $zones_array = array();
+        $timestamp = time();
+        foreach(timezone_identifiers_list() as $key => $zone) {
+            date_default_timezone_set($zone);
+            $zones_array[$key]['zone'] = $zone;
+            $zones_array[$key]['time'] = '(UTC ' . date('P', $timestamp).") ".$zone;
+            $zones_array[$key]['sort'] = date('P', $timestamp);
+        }
+        usort($zones_array, function($a, $b) {
+            return strcmp($a["sort"], $b["sort"]);
+        });
+
+        $timezones = array();
+        foreach ($zones_array as $value) {
+            $timezones[$value['zone']] = $value['time'];
+        }
+        return $timezones;
+    }
+
+
 }

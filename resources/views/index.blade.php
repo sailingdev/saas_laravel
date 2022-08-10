@@ -226,15 +226,12 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="welcome-border"></div>
-        </div>
     </section>
 
 
     {{--Social--}}
     <section style="padding-bottom: 40px">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-sm-6 col-md-6"  style="border-right: 1px solid rgba(0,0,0,.2);">
                     <div class="left">
@@ -244,7 +241,7 @@
                             <h4 class="text-center">to top networks</h4>
                         </div>
 
-                        <div class="flex-box">
+                        <div class="flex-box container">
                             <div class="detail_box text-center" data-aos="fade-right">
                                 <img width="58" src="{{asset('themes/social_logo/facebook-new.svg')}}" alt="Facebook">
                                 <h5 class="text-center">Facebook</h5>
@@ -281,52 +278,30 @@
                 <div class="col-lg-6 col-sm-6 col-md-6">
                     <div class="right">
                         <div class="text-center" data-aos="fade-left">
-                            <img src="{{asset('themes/social_logo/curate-icon.webp')}}" width="48px" height="65px" alt="schedule-icon">
-                            <h2 class="text-center"> Curate content </h2>
-                            <h4 class="text-center">from top sources</h4>
-
+{{--                            <img src="{{asset('themes/social_logo/curate-icon.webp')}}" width="48px" height="65px" alt="schedule-icon">--}}
+                            <h2 class="text-center"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h2>
+                            <h4 class="text-center">Etiam ultricies nisi vel augue.</h4>
                         </div>
 
-                        <div class="flex-box" data-aos="fade-left">
-                            <div class="detail_box text-center">
-                                <img width="58" src="{{asset('themes/social_logo/facebook-new.svg')}}" alt="Facebook">
-                                <h5 class="text-center">Facebook</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-left">
-                                <img width="58p" src="{{asset('themes/social_logo/google.svg')}}" alt="Instagram">
-                                <h5 class="text-center">Google</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-left">
-                                <img width="58" src="{{asset('themes/social_logo/twitter-new.svg')}}" alt="Twitter">
-                                <h5 class="text-center">Twitter</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-left">
-                                <img width="58" src="{{asset('themes/social_logo/rss.svg')}}" alt="LinkedIn">
-                                <h5 class="text-center">RSS</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-left">
-                                <img width="58" src="{{asset('themes/social_logo/Reddit_new.svg')}}" alt="Pinterest">
-                                <h5 class="text-center">Reddit</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-left">
-                                <img width="58" src="{{asset('themes/social_logo/Giphy.webp')}}" alt="TikTok">
-                                <h5 class="text-center">Giphy</h5>
-                            </div>
+                        <div class="flex-box text-center container" data-aos="fade-left">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                            parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
+                            pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                            mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                            vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+                            tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+                            imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                            Nam eget dui.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="container">
-        <div class="welcome-border"></div>
-    </div>
 
     {{--Features section--}}
     <section class="about_area" style="padding-top: 90px" id="features">
@@ -592,6 +567,13 @@
 @endsection
 
 @section('specific_js')
+<script type="text/javascript" src="{{asset("plugins/slick.js")}}"></script>
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 2000
+    });
+</script>
 <script>
     $(document).ready(function ($){
         $(".Modern-Slider").slick({
