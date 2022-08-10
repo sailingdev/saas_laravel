@@ -95,30 +95,6 @@
     min-height: 580px;
 }
 
-/* Carousel Item Background Images */
-.carousel-slider .carousel-item-eight {
-    background: url(../../../assets/pages/img/frontend-slider/bg9.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.carousel-slider .carousel-item-nine {
-    background: url(../../../assets/pages/img/frontend-slider/bg1.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.carousel-slider .carousel-item-ten {
-    background: url(../../../assets/pages/img/frontend-slider/bg2.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.carousel-slider .carousel-item-eleven {
-    background: url(../../../assets/pages/img/frontend-slider/bg3.jpg);
-    background-size: cover;
-    background-position: center center;
-}
 
 /* Carousel Titles */
 .carousel-slider .carousel-title-v1 {
