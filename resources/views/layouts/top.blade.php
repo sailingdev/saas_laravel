@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <meta name="description" content="{{(Helper::get_option('website_desc22', '#1 Marketing Platform for Social Network') )}}">
-    <meta name="keywords" content="__( Helper::get_option('website_keywords', 'social network, marketing, brands, businesses, agencies, individuals') )">
+    <meta name="keywords" content="{{Helper::get_option('website_keywords', 'social network, marketing, brands, businesses, agencies, individuals') }}">
     <!-- Favicon-->
     <link rel="icon" type="image/png" href="{{asset("themes/backend/default/assets/img/favicon12.png")}}" />
     <!-- Stylesheet-->

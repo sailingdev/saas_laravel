@@ -67,541 +67,172 @@
         }
 
     </style>
-    <link href="{{asset('plugins/owl.carousel/owl.carousel.css')}}" rel="stylesheet">
-    <link href="{{asset('plugins/owl.carousel/slider.css')}}" rel="stylesheet">
-{{--    slider--}}
-<style>
-    carousel {
-        position: relative;
-    }
-    .carousel-inner {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-    .carousel-inner > .item {
-        position: relative;
-        display: none;
-        -webkit-transition: .6s ease-in-out left;
-        -o-transition: .6s ease-in-out left;
-        transition: .6s ease-in-out left;
-    }
-    .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
-        line-height: 1;
-    }
-    @media all and (transform-3d), (-webkit-transform-3d) {
-        .carousel-inner > .item {
-            -webkit-transition: -webkit-transform .6s ease-in-out;
-            -o-transition:      -o-transform .6s ease-in-out;
-            transition:         transform .6s ease-in-out;
-
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            -webkit-perspective: 1000px;
-            perspective: 1000px;
-        }
-        .carousel-inner > .item.next,
-        .carousel-inner > .item.active.right {
-            left: 0;
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-        }
-        .carousel-inner > .item.prev,
-        .carousel-inner > .item.active.left {
-            left: 0;
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-        }
-        .carousel-inner > .item.next.left,
-        .carousel-inner > .item.prev.right,
-        .carousel-inner > .item.active {
-            left: 0;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-    .carousel-inner > .active,
-    .carousel-inner > .next,
-    .carousel-inner > .prev {
-        display: block;
-    }
-    .carousel-inner > .active {
-        left: 0;
-    }
-    .carousel-inner > .next,
-    .carousel-inner > .prev {
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-    .carousel-inner > .next {
-        left: 100%;
-    }
-    .carousel-inner > .prev {
-        left: -100%;
-    }
-    .carousel-inner > .next.left,
-    .carousel-inner > .prev.right {
-        left: 0;
-    }
-    .carousel-inner > .active.left {
-        left: -100%;
-    }
-    .carousel-inner > .active.right {
-        left: 100%;
-    }
-    .carousel-control {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 15%;
-        font-size: 20px;
-        color: #fff;
-        text-align: center;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-        filter: alpha(opacity=50);
-        opacity: .5;
-    }
-    .carousel-control.left {
-        background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-        background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-        background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-        background-repeat: repeat-x;
-    }
-    .carousel-control.right {
-        right: 0;
-        left: auto;
-        background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-        background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-        background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-        background-repeat: repeat-x;
-    }
-    .carousel-control:hover,
-    .carousel-control:focus {
-        color: #fff;
-        text-decoration: none;
-        filter: alpha(opacity=90);
-        outline: 0;
-        opacity: .9;
-    }
-    .carousel-control .icon-prev,
-    .carousel-control .icon-next,
-    .carousel-control .glyphicon-chevron-left,
-    .carousel-control .glyphicon-chevron-right {
-        position: absolute;
-        top: 50%;
-        z-index: 5;
-        display: inline-block;
-        margin-top: -10px;
-    }
-    .carousel-control .icon-prev,
-    .carousel-control .glyphicon-chevron-left {
-        left: 50%;
-        margin-left: -10px;
-    }
-    .carousel-control .icon-next,
-    .carousel-control .glyphicon-chevron-right {
-        right: 50%;
-        margin-right: -10px;
-    }
-    .carousel-control .icon-prev,
-    .carousel-control .icon-next {
-        width: 20px;
-        height: 20px;
-        font-family: serif;
-        line-height: 1;
-    }
-    .carousel-control .icon-prev:before {
-        content: '\2039';
-    }
-    .carousel-control .icon-next:before {
-        content: '\203a';
-    }
-    .carousel-indicators {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        z-index: 15;
-        width: 60%;
-        padding-left: 0;
-        margin-left: -30%;
-        text-align: center;
-        list-style: none;
-    }
-    .carousel-indicators li {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin: 1px;
-        text-indent: -999px;
-        cursor: pointer;
-        background-color: #000 \9;
-        background-color: rgba(0, 0, 0, 0);
-        border: 1px solid #fff;
-        border-radius: 10px;
-    }
-    .carousel-indicators .active {
-        width: 12px;
-        height: 12px;
-        margin: 0;
-        background-color: #fff;
-    }
-    .carousel-caption {
-        position: absolute;
-        right: 15%;
-        bottom: 20px;
-        left: 15%;
-        z-index: 10;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: #fff;
-        text-align: center;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-    }
-    .carousel-caption .btn {
-        text-shadow: none;
-    }
-    @media screen and (min-width: 768px) {
-        .carousel-control .glyphicon-chevron-left,
-        .carousel-control .glyphicon-chevron-right,
-        .carousel-control .icon-prev,
-        .carousel-control .icon-next {
-            width: 30px;
-            height: 30px;
-            margin-top: -15px;
-            font-size: 30px;
-        }
-        .carousel-control .glyphicon-chevron-left,
-        .carousel-control .icon-prev {
-            margin-left: -15px;
-        }
-        .carousel-control .glyphicon-chevron-right,
-        .carousel-control .icon-next {
-            margin-right: -15px;
-        }
-        .carousel-caption {
-            right: 20%;
-            left: 20%;
-            padding-bottom: 30px;
-        }
-        .carousel-indicators {
-            bottom: 20px;
-        }
-    }
-</style>
 @stop
 
 @section('content')
-    <!-- BEGIN SLIDER -->
-    <div class="breadcrumb-area">
-        <div id="carousel-example-generic" class="carousel slide carousel-slider">
-            <!-- Indicators -->
-{{--            <ol class="carousel-indicators carousel-indicators-frontend">--}}
-{{--                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>--}}
-{{--                <li data-target="#carousel-example-generic" data-slide-to="1"></li>--}}
-{{--                <li data-target="#carousel-example-generic" data-slide-to="2"></li>--}}
-{{--                <li data-target="#carousel-example-generic" data-slide-to="3"></li>--}}
-{{--                <li data-target="#carousel-example-generic" data-slide-to="4"></li>--}}
-{{--            </ol>--}}
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <!-- First slide -->
-                <div class="item carousel-item-eight active">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 col-md-5">
-                                <div style="top:15%;position: absolute;">
-                                    <h2 style="letter-spacing: -.8px; line-height: 130%; text-align: left; font-weight: 500" class="animate-delay text-center" data-animation="animated fadeInDown">
-                                        The social media scheduler, with extra tricks
-                                    </h2>
-                                    <p style="line-height: 6vh;font-size: 15pt;" class="text-center">
-                                        Later is the all-in-one social marketing platform for the top social networks. Plan, analyze, and publish your content in a few clicks — so you can save time and grow your business.
-                                    </p>
+{{--    Social media Key--}}
+    <section class="hero-barishal welcome_area" id="home">
+        <div class="container" style="height: 90%">
+            <div class="row justify-content-between align-items-center" style="height: 90%">
+                <div class="col-md-5" data-aos="fade-right">
+                    <div class="welcome_text_area">
+                        <h2 class="" data-wow-delay="0.2s">
+                            Is your
+                            <br>
+                            Social media
+                        </h2>
+                        <div class="Modern-Slider">
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div>
+                                            <h2 class="animation-text">easy to manage?</h2>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-7 text-center">
-                                <img class="mt-50" width="700" src="{{asset('themes/frontend/wimax/assets/img/bg-img/home-hero-main.webp')}}">
+                            <!-- // Item -->
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div>
+                                            <h2 class="animation-text">driving traffic?</h2>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- // Item -->
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div>
+                                            <h2 class="animation-text">reaching people?</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Item -->
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div>
+                                            <h2 class="animation-text">getting Likes?</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Item -->
+
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div>
+                                            <h2 class="animation-text">generating sales?</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // Item -->
+                        </div>
+                        <div class="pr-main">
+                            <p data-wow-delay="0.3s">Post Planner helps you schedule the best content in your industry.</p>
+                            <p class="" data-wow-delay="0.3s">Automatically.</p>
+                            <p class="" data-wow-delay="0.3s">Every day.</p>
+                            <a class="btn wimax-btn mt-30 wow fadeInUp" href="{{ url("signup") }}" data-wow-delay="0.4s">{{"Start A Free Trial"}}</a>
+                            <a class="btn wimax-btn btn-2 mt-30 ml-2 wow fadeInUp" href="#features" data-wow-delay="0.5s">{{"Learn More"}}</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Second slide -->
-                <div class="item carousel-item-nine">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 col-md-7 text-center">
-                                <img class="mt-50" width="700" src="{{asset('themes/frontend/wimax/assets/img/bg-img/instagram-reels-scheduling.webp')}}">
-                            </div>
 
-                            <div class="col-12 col-md-5">
-                                <div style="top:15%;position: absolute;">
-                                    <h2 style="letter-spacing: -.8px; line-height: 130%; text-align: left; font-weight: 500" class="animate-delay text-center" data-animation="animated fadeInDown">
-                                        It’s here! Schedule Instagram Reels on Later
-                                    </h2>
-                                    <p style="line-height: 6vh; font-size: 15pt" class="text-center">
-                                        Can you post Reels on Later? Yup! Visually plan & schedule Reels to auto-publish whenever you want.
-                                        Moderate & reply to comments using the Conversations tool, and get detailed Reels Analytics to optimize all of your posts.
-                                    </p>
+                <div class="col-md-7" data-aos="fade-left">
+                    <div class="welcome_area_thumb text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="image-Slider">
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-1.png')}}" alt=""  />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Third slide -->
-                <div class="item carousel-item-nine">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 col-md-5">
-                                <div style="top:15%;position: absolute;">
-                                    <h2 style="letter-spacing: -.8px; line-height: 130%; text-align: left; font-weight: 500" class="animate-delay text-center" data-animation="animated fadeInDown">
-                                        Auto publish TikTok posts, Instagram feed posts, & more
-                                    </h2>
-                                    <p style="line-height: 6vh;font-size: 15pt;" class="text-center">
-                                        Save time and actually put your phone away by scheduling posts to auto publish ahead of time.
-                                        Auto Publish is available for Instagram feed posts (single image, videos, & carousels),
-                                        and TikTok, Facebook, Twitter, Pinterest, and LinkedIn posts.
-                                    </p>
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/home-hero-main.webp')}}" alt=""  />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-7 text-center">
-                                <img class="mt-50 pull-right" width="700" src="{{asset('themes/frontend/wimax/assets/img/bg-img/home-auto-publish.webp')}}">
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Forth slide -->
-                <div class="item carousel-item-nine">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 col-md-7 text-center">
-                                <img class="mt-50"  src="{{asset('themes/frontend/wimax/assets/img/bg-img/Hp--UGC-d9cb0459.webp')}}">
-                            </div>
 
-                            <div class="col-12 col-md-5">
-                                <div style="top:15%;position: absolute;">
-                                    <h2 style="letter-spacing: -.8px; line-height: 130%; text-align: left; font-weight: 500" class="animate-delay" data-animation="animated fadeInDown">
-                                        Find and share the right content
-                                    </h2>
-                                    <p style="line-height: 6vh;font-size: 15pt;">
-                                        No time to create content? No problem.
-                                        Later helps you find on-brand content, add your own personal touch,
-                                        and share to your Instagram, Facebook, Twitter and
-                                        Pinterest social channels in just a few clicks.
-                                    </p>
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-8.jpg')}}" alt=""  />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Fifth slide -->
-                <div class="item carousel-item-nine">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 col-md-5">
-                                <div style="top:15%;position: absolute;">
-                                    <h2 style="letter-spacing: -.8px; line-height: 130%; text-align: left; font-weight: 500" class="animate-delay text-center" data-animation="animated fadeInDown">
-                                        Measure what matters
-                                    </h2>
-                                    <p style="line-height: 6vh;font-size: 15pt;" class="text-center">
-                                        Reporting? Good. Personalized insights? Game-changer.
-                                        Later helps you understand what works for your business,
-                                        and gives you unique suggestions to optimize your social strategy.
-                                        It’s data you can’t do without.
-                                    </p>
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/coming-soon.png')}}" alt=""  />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-7 text-center">
-                                <img class="mt-50 pull-right" width="700" src="{{asset('themes/frontend/wimax/assets/img/bg-img/ig--analytics.webp')}}">
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/thank-you.png')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div align="center">
+                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/maintenence.jpg')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img-fill">
+                                    <div class="info">
+                                        <div>
+                                            <img width="600" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-3.png')}}" alt=""  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control carousel-control-shop carousel-control-frontend" href="#carousel-example-generic" role="button" data-slide="prev">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
-            </a>
-            <a class="right carousel-control carousel-control-shop carousel-control-frontend" href="#carousel-example-generic" role="button" data-slide="next">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </a>
         </div>
-    </div>
-    <!-- END SLIDER -->
-
-{{--    Social media Key--}}
-{{--    <section class="hero-barishal welcome_area" id="home">--}}
-{{--        <div class="container" style="height: 90%">--}}
-{{--            <div class="row justify-content-between align-items-center" style="height: 90%">--}}
-{{--                <div class="col-md-5" data-aos="fade-right">--}}
-{{--                    <div class="welcome_text_area">--}}
-{{--                        <h2 class="" data-wow-delay="0.2s">--}}
-{{--                            Is your--}}
-{{--                            <br>--}}
-{{--                            Social media--}}
-{{--                        </h2>--}}
-{{--                        <div class="Modern-Slider">--}}
-{{--                            <!-- Item -->--}}
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div>--}}
-{{--                                            <h2 class="animation-text">easy to manage?</h2>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <!-- // Item -->--}}
-{{--                            <!-- Item -->--}}
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div>--}}
-{{--                                            <h2 class="animation-text">driving traffic?</h2>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <!-- // Item -->--}}
-{{--                            <!-- Item -->--}}
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div>--}}
-{{--                                            <h2 class="animation-text">reaching people?</h2>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <!-- // Item -->--}}
-{{--                            <!-- Item -->--}}
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div>--}}
-{{--                                            <h2 class="animation-text">getting Likes?</h2>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <!-- // Item -->--}}
-
-{{--                            <!-- Item -->--}}
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div>--}}
-{{--                                            <h2 class="animation-text">generating sales?</h2>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <!-- // Item -->--}}
-{{--                        </div>--}}
-{{--                        <div class="pr-main">--}}
-{{--                            <p data-wow-delay="0.3s">Post Planner helps you schedule the best content in your industry.</p>--}}
-{{--                            <p class="" data-wow-delay="0.3s">Automatically.</p>--}}
-{{--                            <p class="" data-wow-delay="0.3s">Every day.</p>--}}
-{{--                            <a class="btn wimax-btn mt-30 wow fadeInUp" href="{{ url("signup") }}" data-wow-delay="0.4s">{{"Start A Free Trial"}}</a>--}}
-{{--                            <a class="btn wimax-btn btn-2 mt-30 ml-2 wow fadeInUp" href="#features" data-wow-delay="0.5s">{{"Learn More"}}</a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-
-
-{{--                <div class="col-md-7" data-aos="fade-left">--}}
-{{--                    <div class="welcome_area_thumb text-center wow fadeInUp" data-wow-delay="0.2s">--}}
-{{--                        <div class="image-Slider">--}}
-{{--                            <!-- Item -->--}}
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div align="center">--}}
-{{--                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-1.png')}}" alt=""  />--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div align="center">--}}
-{{--                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/home-hero-main.webp')}}" alt=""  />--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div align="center">--}}
-{{--                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-8.jpg')}}" alt=""  />--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div align="center">--}}
-{{--                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/coming-soon.png')}}" alt=""  />--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div align="center">--}}
-{{--                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/thank-you.png')}}" alt=""  />--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div align="center">--}}
-{{--                                            <img sizes="100vw" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/maintenence.jpg')}}" alt=""  />--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="item">--}}
-{{--                                <div class="img-fill">--}}
-{{--                                    <div class="info">--}}
-{{--                                        <div>--}}
-{{--                                            <img width="600" src="{{ asset('themes/frontend/wimax/assets/img/bg-img/hero-3.png')}}" alt=""  />--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
+    </section>
 
 
 {{--    Social--}}
@@ -941,14 +572,8 @@
     </div>
 @endsection
 
-
-
-
 @section('specific_js')
 <script type="text/javascript" src="{{asset("plugins/slick.js")}}"></script>
-<script src="{{asset('plugins/owl.carousel/bootstrap.min.js')}}" type="text/javascript"></script>
-
-<script src="{{asset('plugins/owl.carousel/owl.carousel.min.js')}}" type="text/javascript"></script>
 
 <script>
     AOS.init({
@@ -990,40 +615,6 @@
             nextArrow: false,
             variableWidth: false,
         });
-
-
-        //Function to animate slider captions
-        function doAnimations( elems ) {
-            //Cache the animationend event in a variable
-            var animEndEv = 'webkitAnimationEnd animationend';
-            elems.each(function () {
-                var $this = $(this),
-                    $animationType = $this.data('animation');
-                $this.addClass($animationType).one(animEndEv, function () {
-                    $this.removeClass($animationType);
-                });
-            });
-        }
-
-        //Variables on page load
-        var $myCarousel = $('#carousel-example-generic'),
-            $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
-
-        //Initialize carousel
-        $myCarousel.carousel();
-
-        //Animate captions in first slide on page load
-        doAnimations($firstAnimatingElems);
-
-        //Pause carousel
-        //$myCarousel.carousel('pause');
-
-        //Other slides to be animated on carousel slide event
-        $myCarousel.on('slide.bs.carousel', function (e) {
-            var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
-            doAnimations($animatingElems);
-        });
-
     })
 </script>
 @endsection
