@@ -18,22 +18,25 @@
                         @error('email')
                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
-                                    </span>
+                        </span>
                         @enderror
                     </div>
 
                     <div class="form-group"><i class="lni-lock"></i>
-                        <input class="form-control @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="current-password">
+                        <input class="form-control @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="current-password" placeholder="Password">
                         @error('password')
                         <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                 <strong>{{ $message }}</strong>
+                        </span>
                         @enderror
                     </div>
 
-                    @if(Helper::get_option('google_recaptcha_status', 0))
-                        <div class="g-recaptcha m-b-15" data-sitekey="{{Helper::get_option('google_recaptcha_site_key', '')}}"></div>
-                    @endif
+                    <div class="form-group">
+                        <span>{!! app('captcha')->display() !!}</span>
+                        @error('g-recaptcha-response')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
 
 
                     <div class="custom-control custom-checkbox mb-3 mr-sm-2">
@@ -74,11 +77,10 @@
                     @endif
                 </div>
             @endif
-
         </div>
     </div>
     <!-- Register Side Content-->
-    <div class="register-side-content bg-img" style="background-image: url('{{asset('themes/frontend/wimax/assets/img/bg-img/hero-7.jpg')}}');"></div>
+    <div class="register-side-content bg-img" style="background-image: url('{{'themes/frontend/wimax/assets/img/bg-img/checkout-sidebar-background.svg'}}');"></div>
 </div>
 @include('layouts.bottom')
 

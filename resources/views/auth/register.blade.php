@@ -38,7 +38,6 @@
             font-family: "Segoe UI";
         }
     </style>
-
 @endsection
 @section('content')
     <div class="container-fluid">
@@ -64,31 +63,31 @@
                       </span>
                 </div>
 
-                <form action="{{ route('register') }}">
+                <form action="{{ route('register') }}" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="fullname">Full Name:</label>
-                        <input type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" placeholder="Enter full name" id="fullname">
+                        <input type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" placeholder="Enter full name" id="fullname" required autocomplete="name" autofocus>
                         @error('fullname')
-                            <div class="text-danger">
-                                {{$message}}
-                            </div>
+                        <div class="text-danger">
+                            {{$message}}
+                        </div>
                         @enderror
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email address:</label>
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Enter email" id="email">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Enter email" id="email" required autocomplete="email" autofocus>
                         @error('email')
-                            <div class="text-danger">
-                                {{$message}}
-                            </div>
+                        <div class="text-danger">
+                            {{$message}}
+                        </div>
                         @enderror
                     </div>
 
                     <div class="form-group">
                         <label for="pwd">Password:</label>
-                        <input type="password" class="form-control  @error('password') is-invalid @enderror" name="password" placeholder="Enter password" id="pwd">
+                        <input type="password" class="form-control  @error('password') is-invalid @enderror" name="password" placeholder="Enter password" id="pwd" required autocomplete="new-password">
                         @error('password')
                         <div class="text-danger">
                             {{$message}}
@@ -98,7 +97,7 @@
 
                     <div class="form-group">
                         <label for="confirm_pwd">Confirm password:</label>
-                        <input type="password" class="form-control" placeholder="Confirm password" id="confirm_pwd">
+                        <input type="password" class="form-control" name="confirm_password" placeholder="Confirm password" id="confirm_pwd" required autocomplete="new-password">
                     </div>
 
                     <div class="form-group">
@@ -112,9 +111,14 @@
                         </select>
                     </div>
 
-                    @if(Helper::get_option('google_recaptcha_status', 0))
-                        <div class="g-recaptcha m-b-5" data-sitekey="{{Helper::get_option('google_recaptcha_site_key', '')}}"></div>
-                    @endif
+                    <div class="form-group">
+                        <span>{!! app('captcha')->display() !!}</span>
+                        @error('g-recaptcha-response')
+                        <div class="text-danger">
+                            {{$message}}
+                        </div>
+                        @enderror
+                    </div>
 
 
                     <div class="form-group form-check">
@@ -122,26 +126,19 @@
                             <input class="form-check-input" type="checkbox"> Accept <a style="font-size: 13px; color: #91799b" href="{{url('terms_and_policies')}}">{{__("Terms & Conditions")}}</a>
                         </label>
                     </div>
-
-
                     <button type="submit" class="btn btn-primary btn-block text-uppercase">Signup</button>
                 </form>
-
-
             </div>
             <div class="col-12 col-md-5 col-lg-5" style="background-position: top;
                                                         background-repeat: no-repeat;
                                                         background-size: cover;
                                                         justify-content: space-between;
                                                         background-image: url({{'themes/frontend/wimax/assets/img/bg-img/checkout-sidebar-background.svg'}});">
-
             </div>
         </div>
     </div>
 @endsection
 
 @section('specific_js')
-    @if(Helper::get_option('google_recaptcha_status', 0))
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    @endif
+
 @stop

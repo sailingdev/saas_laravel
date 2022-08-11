@@ -1,4 +1,26 @@
 <?php return array (
+  'biscolab/laravel-recaptcha' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Biscolab\\ReCaptcha\\ReCaptchaServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'ReCaptcha' => 'Biscolab\\ReCaptcha\\Facades\\ReCaptcha',
+    ),
+  ),
+  'buzz/laravel-google-captcha' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Buzz\\LaravelGoogleCaptcha\\CaptchaServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Captcha' => 'Buzz\\LaravelGoogleCaptcha\\CaptchaFacade',
+    ),
+  ),
   'facade/ignition' => 
   array (
     'providers' => 
