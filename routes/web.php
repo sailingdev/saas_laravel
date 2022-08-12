@@ -23,6 +23,8 @@ Route::get('/blog/{id?}', 'WimaxController@blog');
 Route::get('/create-post', 'PostController@create');
 Route::post('/submit-post','PostController@store');
 
+Route::get('/dashboard','WimaxController@dashboard');
+
 Route::get('out', function (){
     Auth::logout();
 });

@@ -75,7 +75,7 @@
     <section class="hero-barishal welcome_area" id="home">
         <div class="container" style="height: 90%">
             <div class="row justify-content-between align-items-center" style="height: 90%">
-                <div class="col-md-5" data-aos="fade-right">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="welcome_text_area">
                         <h2 class="" data-wow-delay="0.2s">
                             Is your
@@ -144,14 +144,33 @@
                             <p data-wow-delay="0.3s">Post Planner helps you schedule the best content in your industry.</p>
                             <p class="" data-wow-delay="0.3s">Automatically.</p>
                             <p class="" data-wow-delay="0.3s">Every day.</p>
-                            <a class="btn wimax-btn mt-30 wow fadeInUp" href="{{ url("signup") }}" data-wow-delay="0.4s">{{"Start A Free Trial"}}</a>
+                            <a class="btn wimax-btn mt-30 wow fadeInUp" href="{{ url("signup") }}" data-wow-delay="0.4s">{{"Get Started for free"}}</a>
                             <a class="btn wimax-btn btn-2 mt-30 ml-2 wow fadeInUp" href="#features" data-wow-delay="0.5s">{{"Learn More"}}</a>
+                        </div>
+                    </div>
+                    <div class="pr-main row" style="padding: 0">
+                        <div class="col-12 col-md-4" style="padding: 0">
+                                <span style="font-size: 10pt">
+                                <i class="lin lni-check-mark-circle" style="font-size: 2vh"></i>
+                                Free and paid pans
+                            </span>
+                        </div>
+                        <div class="col-12 col-md-4" style="padding: 0">
+                                <span style="font-size: 10pt">
+                                <i class="lin lni-check-mark-circle" style="font-size: 2vh"></i>
+                                Setup in minutes
+                            </span>
+                        </div>
+                        <div class="col-12 col-md-4" style="padding: 0">
+                                <span style="font-size: 10pt">
+                                    <i class="lin lni-check-mark-circle" style="font-size: 2vh"></i>
+                                    No credit card required
+                                </span>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="col-md-7" data-aos="fade-left">
+                <div class="col-md-6" data-aos="fade-left" style="padding-top: 9%">
                     <div class="welcome_area_thumb text-center wow fadeInUp" data-wow-delay="0.2s">
                         <div class="image-Slider">
                             <!-- Item -->
@@ -564,7 +583,7 @@
                     <div class="section_heading white text-center" data-aos="fade-left">
                         <h3>{{"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"}}</h3>
                         <div class="line bg-white"></div>
-                        <a class="btn wimax-btn mt-30" href="{{ url("signup") }}">{{"Start A Free Trial"}}</a>
+                        <a class="btn wimax-btn mt-30" href="{{ url("signup") }}">{{"Get Started for free"}}</a>
                     </div>
                 </div>
             </div>

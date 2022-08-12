@@ -32,12 +32,6 @@
                                 <li>
                                     <a class="hover-underline-animation" href="{{url('/')}}#faq">FAQs</a>
                                 </li>
-
-                                <li>
-                                    <a class="hover-underline-animation" href="{{url("login")}}">{{__("Login")}}</a>
-                                </li>
-
-
 {{--                                <li class="language-box cn-dropdown-item"><a class="hover-underline-animation" href="#"><i class=""></i></a>--}}
 {{--                                    <ul class="dropdown">--}}
 {{--                                        <li>--}}
@@ -47,8 +41,34 @@
 {{--                                    <span class="dd-trigger"></span>--}}
 {{--                                </li>--}}
 
+                                @guest
+                                    @if (Route::has('login'))
+                                        <li>
+                                            <a class="hover-underline-animation" href="{{url("login")}}">{{__("Login")}}</a>
+                                        </li>
+                                    @endif
+                                @endguest
+
                             </ul>
                             <!-- Login Button-->
+
+                            @guest
+                                @if (Route::has('login'))
+                                    <div class="login-btn-area ml-5 mt-5 mt-lg-0">
+                                        <a class="btn wimax-btn" href="{{ route('register') }}">
+                                            {{__("Get Started")}}
+                                        </a>
+                                    </div>
+                                @endif
+
+                            @else
+
+                                <div class="login-btn-area ml-5 mt-5 mt-lg-0">
+                                    <a class="btn wimax-btn" href="{{url('dashboard')}}">
+                                        {{__( sprintf( __("Hi, %s"), Auth::user()->fullname ) )}}
+                                    </a>
+                                </div>
+                            @endguest
 {{--                            <?php if(!_s("uid")){?>--}}
 {{--                            <?php if( get_option("signup_status", 1) ){?>--}}
 {{--                            <div class="login-btn-area ml-5 mt-5 mt-lg-0"><a class="btn wimax-btn" href="<?php __( url("signup") )?>"><?php __("Get Started")?></a></div>--}}
@@ -56,10 +76,6 @@
 {{--                            <?php }else{?>--}}
 {{--                            <div class="login-btn-area ml-5 mt-5 mt-lg-0"><a class="btn wimax-btn" href="<?php __( url("dashboard") )?>"><?php __( sprintf( __("Hi, %s"), __("fullname") ) )?></a></div>--}}
 {{--                            <?php }?>--}}
-
-                            <div class="login-btn-area ml-5 mt-5 mt-lg-0"><a class="btn wimax-btn" href="<?php __( url("signup") )?>">{{__("Get Started")}}</a></div>
-{{--                            <div class="login-btn-area ml-5 mt-5 mt-lg-0"><a class="btn wimax-btn" href="<?php __( url("dashboard") )?>">{{sprintf( __("Hi, %s"), __("fullname") )}}</a></div>--}}
-
                         </div>
                     </div>
                 </nav>
