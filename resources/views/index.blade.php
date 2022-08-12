@@ -149,22 +149,23 @@
                         </div>
                     </div>
                     <div class="pr-main row" style="padding: 0">
-                        <div class="col-12 col-md-4" style="padding: 0">
+                        <div class="col-12 col-md-2" style="padding: 0;">
                                 <span style="font-size: 10pt">
                                 <i class="lin lni-check-mark-circle" style="font-size: 2vh"></i>
-                                Free and paid pans
+                                Free plan
                             </span>
                         </div>
+
                         <div class="col-12 col-md-4" style="padding: 0">
                                 <span style="font-size: 10pt">
                                 <i class="lin lni-check-mark-circle" style="font-size: 2vh"></i>
-                                Setup in minutes
+                                No credit card needed
                             </span>
                         </div>
                         <div class="col-12 col-md-4" style="padding: 0">
                                 <span style="font-size: 10pt">
                                     <i class="lin lni-check-mark-circle" style="font-size: 2vh"></i>
-                                    No credit card required
+                                    Setup in minutes
                                 </span>
                         </div>
                     </div>

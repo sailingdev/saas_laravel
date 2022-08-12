@@ -212,5 +212,6 @@
 @endsection
 
 @section('specific_js')
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+{{--    <script src='https://kit.fontawesome.com/a076d05399.js'></script>--}}
+    <script src='{{asset('plugins/all.min.js')}}'></script>
 @stop

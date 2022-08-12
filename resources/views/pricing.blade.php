@@ -57,16 +57,560 @@
 
 
 
+
+
+    <section class="price_plan_area section_padding_130_80" id="pricing">
+        <div class="container">
+
+
+            <div class="row justify-content-center">
+                <!-- Single Price Plan Area-->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="single_price_plan wow fadeInUp animated" data-wow-delay="0.2s"
+                         style="visibility: visible; animation-delay: 0.2s;">
+                        <div class="title">
+                            <h3>Google Sit Kit</h3>
+                            <p>Google LLC is an American multinational technology company that focuses on artificial
+                                intelligence, search engine, online advertising, cloud computing, computer software,
+                                quantum computing, e-commerce, and consumer electronics.</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="price">
+                            <div class="annual_price">
+                                <h4 class="price">$2000<span class="fw-4 fs-18">/month</span></h4>
+                                <i type="button" class="lni lni-question-circle">
+                                    <span>This plan is yearly</span>
+                                </i>
+                            </div>
+                            <div class="monthly_price">
+                                <h4 class="price">$1500<span class="fw-4 fs-18">/month</span></h4>
+                                <i type="button" class="lni lni-question-circle">
+                                    <span>This plan is monthly</span>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="">
+
+                            <div class="plan-group">
+                                <div class="text-large">Add up to 0 social accounts</div>
+                                <div class="small">3 social account on each platform</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p></p><h6>Scheduling &amp; Report</h6>
+                            <p></p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Facebook scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Instagram scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Twitter scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+
+
+                            <p></p><h6>Advance features</h6>
+                            <p></p>
+
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Spintax support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>Watermark support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>Image Editor support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+
+                            <p>
+                                <i class="lni-close"></i>
+
+                                <span>Cloud import: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-close"></i>
+                                <span>File type: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Storage: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Max. file size: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                        </div>
+                        <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
+                                               href="http://localhost/202287/laterly.io/payment/index/b775f3622df4622f56f08066e4d95522/1"
+                                               data-tmp="http://localhost/202287/laterly.io/payment/index/b775f3622df4622f56f08066e4d95522/2">Pay
+                                now</a></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="single_price_plan wow fadeInUp animated" data-wow-delay="0.2s"
+                         style="visibility: visible; animation-delay: 0.2s;">
+                        <div class="title">
+                            <h3>Telecom Service</h3>
+                            <p>America Telecom Service</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="price">
+                            <div class="annual_price">
+                                <h4 class="price">$1300<span class="fw-4 fs-18">/month</span></h4>
+                                <i type="button" class="lni lni-question-circle">
+                                    <span>This plan is yearly</span>
+                                </i>
+                            </div>
+                            <div class="monthly_price">
+                                <h4 class="price">$1200<span class="fw-4 fs-18">/month</span></h4>
+                                <i type="button" class="lni lni-question-circle">
+                                    <span>This plan is monthly</span>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="">
+
+                            <div class="plan-group">
+                                <div class="text-large">Add up to 0 social accounts</div>
+                                <div class="small">9 social account on each platform</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p></p><h6>Scheduling &amp; Report</h6>
+                            <p></p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Facebook scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Instagram scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Twitter scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+
+
+                            <p></p><h6>Advance features</h6>
+                            <p></p>
+
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Spintax support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>Watermark support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>Image Editor support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+
+                            <p>
+                                <i class="lni-close"></i>
+
+                                <span>Cloud import: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-close"></i>
+                                <span>File type: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Storage: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Max. file size: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                        </div>
+                        <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
+                                               href="http://localhost/202287/laterly.io/payment/index/ee5e7a81bd982b757c02c4ce0bdd80e0/1"
+                                               data-tmp="http://localhost/202287/laterly.io/payment/index/ee5e7a81bd982b757c02c4ce0bdd80e0/2">Pay
+                                now</a></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="single_price_plan wow fadeInUp animated" data-wow-delay="0.2s"
+                         style="visibility: visible; animation-delay: 0.2s;">
+                        <div class="title">
+                            <h3>Microsoft Web</h3>
+                            <p>Web is powerful complete solution for you</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="price">
+                            <div class="annual_price">
+                                <h4 class="price">$150<span class="fw-4 fs-18">/month</span></h4>
+                                <i type="button" class="lni lni-question-circle">
+                                    <span>This plan is yearly</span>
+                                </i>
+                            </div>
+                            <div class="monthly_price">
+                                <h4 class="price">$100<span class="fw-4 fs-18">/month</span></h4>
+                                <i type="button" class="lni lni-question-circle">
+                                    <span>This plan is monthly</span>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="">
+
+                            <div class="plan-group">
+                                <div class="text-large">Add up to 0 social accounts</div>
+                                <div class="small">5 social account on each platform</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p></p><h6>Scheduling &amp; Report</h6>
+                            <p></p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Facebook scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Instagram scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Twitter scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+
+
+                            <p></p><h6>Advance features</h6>
+                            <p></p>
+
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Spintax support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>Watermark support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>Image Editor support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+
+                            <p>
+                                <i class="lni-close"></i>
+
+                                <span>Cloud import: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-close"></i>
+                                <span>File type: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Storage: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Max. file size: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                        </div>
+                        <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
+                                               href="http://localhost/202287/laterly.io/payment/index/0464e2692a82ab31ce03580623c44015/1"
+                                               data-tmp="http://localhost/202287/laterly.io/payment/index/0464e2692a82ab31ce03580623c44015/2">Pay
+                                now</a></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="single_price_plan wow fadeInUp animated" data-wow-delay="0.2s"
+                         style="visibility: visible; animation-delay: 0.2s;">
+                        <div class="title">
+                            <h3>Jio Mobile Reacharge</h3>
+                            <p>Angular is a TypeScript-based free and open-source web application framework led by the
+                                Angular Team at Google and by a community of individuals and corporations. Angular is a
+                                complete rewrite from the same team that built AngularJS.</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="price">
+                            <div class="annual_price">
+                                <h4 class="price">$450<span class="fw-4 fs-18">/month</span></h4>
+                                <i type="button" class="lni lni-question-circle">
+                                    <span>This plan is yearly</span>
+                                </i>
+                            </div>
+                            <div class="monthly_price">
+                                <h4 class="price">$400<span class="fw-4 fs-18">/month</span></h4>
+                                <i type="button" class="lni lni-question-circle">
+                                    <span>This plan is monthly</span>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="">
+
+                            <div class="plan-group">
+                                <div class="text-large">Add up to 0 social accounts</div>
+                                <div class="small">9 social account on each platform</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p></p><h6>Scheduling &amp; Report</h6>
+                            <p></p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Facebook scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Instagram scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>
+                    Twitter scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                            </p>
+
+
+                            <p></p><h6>Advance features</h6>
+                            <p></p>
+
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Spintax support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>Watermark support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p>
+                                <i class="lni-close"></i>
+                                <span>Image Editor support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+
+                            <p>
+                                <i class="lni-close"></i>
+
+                                <span>Cloud import: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-close"></i>
+                                <span>File type: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Storage: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                            <p class="have">
+                                <i class="lni-check-mark-circle"></i>
+                                <span>Max. file size: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                            </p>
+                        </div>
+                        <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
+                                               href="http://localhost/202287/laterly.io/payment/index/e9964276c2864796a2855555a57a6d89/1"
+                                               data-tmp="http://localhost/202287/laterly.io/payment/index/e9964276c2864796a2855555a57a6d89/2">Pay
+                                now</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
     <!-- CTA Area-->
     <div class="cta-area section_padding_130_80">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-12 col-sm-8">
                     <div class="cta-content mb-50">
-                        <h3 class="mb-0">Start your free trial. Are you ready to try service reign? ! No contract. No credit card</h3>
+                        <h3 class="mb-0">Start your free trial. Are you ready to try service reign? ! No contract. No
+                            credit card</h3>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 text-sm-right"><a class="btn wimax-btn btn-4 mb-50" href="{{url("register")}}">Start A Free Trial</a></div>
+                <div class="col-12 col-sm-4 text-sm-right"><a class="btn wimax-btn btn-4 mb-50"
+                                                              href="{{url("register")}}">Start A Free Trial</a></div>
             </div>
         </div>
     </div>
