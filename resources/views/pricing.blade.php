@@ -191,9 +191,9 @@
                             </p>
                         </div>
                         <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
-                                               href="http://localhost/202287/laterly.io/payment/index/b775f3622df4622f56f08066e4d95522/1"
-                                               data-tmp="http://localhost/202287/laterly.io/payment/index/b775f3622df4622f56f08066e4d95522/2">Pay
-                                now</a></div>
+                                               href="#"
+                                               data-tmp="#">
+                                Pay now</a></div>
                     </div>
                 </div>
 
@@ -321,8 +321,8 @@
                             </p>
                         </div>
                         <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
-                                               href="http://localhost/202287/laterly.io/payment/index/ee5e7a81bd982b757c02c4ce0bdd80e0/1"
-                                               data-tmp="http://localhost/202287/laterly.io/payment/index/ee5e7a81bd982b757c02c4ce0bdd80e0/2">Pay
+                                               href="#"
+                                               data-tmp="#">Pay
                                 now</a></div>
                     </div>
                 </div>
@@ -451,9 +451,9 @@
                             </p>
                         </div>
                         <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
-                                               href="http://localhost/202287/laterly.io/payment/index/0464e2692a82ab31ce03580623c44015/1"
-                                               data-tmp="http://localhost/202287/laterly.io/payment/index/0464e2692a82ab31ce03580623c44015/2">Pay
-                                now</a></div>
+                                               href="#"
+                                               data-tmp="#">
+                                Pay now</a></div>
                     </div>
                 </div>
 
@@ -583,8 +583,8 @@
                             </p>
                         </div>
                         <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
-                                               href="http://localhost/202287/laterly.io/payment/index/e9964276c2864796a2855555a57a6d89/1"
-                                               data-tmp="http://localhost/202287/laterly.io/payment/index/e9964276c2864796a2855555a57a6d89/2">Pay
+                                               href="#"
+                                               data-tmp="#">Pay
                                 now</a></div>
                     </div>
                 </div>
@@ -592,7 +592,6 @@
             </div>
         </div>
     </section>
-
 
 
 

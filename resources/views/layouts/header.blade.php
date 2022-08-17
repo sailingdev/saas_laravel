@@ -19,10 +19,13 @@
                                 <li class="{{Request::is('/')? 'current_page_item':''}}">
                                     <a class="hover-underline-animation" href="{{url("/")}}#home">{{__("Home")}}</a>
                                 </li>
-                                <li><a class="hover-underline-animation" href="{{url('/')}}#features">{{__("Features")}}</a></li>
 
-                                <li class="{{Request::is("pricing")? 'current_page_item' : ''}} )">
-                                    <a class="hover-underline-animation" href="{{url('pricing')}}">{{__("Pricing")}}</a>
+                                <li>
+                                    <a class="hover-underline-animation" href="{{url('/')}}#features">{{__("Features")}}</a>
+                                </li>
+
+                                <li>
+                                    <a class="hover-underline-animation" href="{{url("/")}}#pricing">{{__("Pricing")}}</a>
                                 </li>
 
                                 <li class="{{Request::is("blog*")?"current_page_item":""}}">

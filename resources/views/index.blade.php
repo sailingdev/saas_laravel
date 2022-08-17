@@ -66,6 +66,31 @@
             width: 650px;
         }
 
+
+        .round-icon {
+            position: relative;
+            z-index: 1;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            font-size: 3rem;
+            margin: 0 auto 1rem;
+            line-height: 1;
+            width: 80px;
+            height: 80px;
+            background-color: #f5f5ff;
+            border-radius: 50%;
+        }
+
+        .round-icon i {
+            line-height: 80px;
+            font-size: 3rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-color: transparent;
+            background-image: -webkit-gradient(linear, left top, right top, from(#e24997), to(#2d2ed4));
+            background-image: linear-gradient(90deg, #e24997, #2d2ed4);
+        }
+
     </style>
 @stop
 
@@ -145,7 +170,6 @@
                             <p class="" data-wow-delay="0.3s">Automatically.</p>
                             <p class="" data-wow-delay="0.3s">Every day.</p>
                             <a class="btn wimax-btn mt-30 wow fadeInUp" href="{{ url("signup") }}" data-wow-delay="0.4s">{{"Get Started for free"}}</a>
-                            <a class="btn wimax-btn btn-2 mt-30 ml-2 wow fadeInUp" href="#features" data-wow-delay="0.5s">{{"Learn More"}}</a>
                         </div>
                     </div>
                     <div class="pr-main row" style="padding: 0">
@@ -255,8 +279,170 @@
     </section>
 
 
+{{--    benifit section--}}
+<section style="padding-bottom: 40px">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12 col-lg-12">
+                <div class="text-center" data-aos="fade-right">
+                    <h5>SOCIAL MEDIA MARKETING</h5>
+                    <h3>One easy-to-use tool to schedule better posts</h3>
+                    <h5>Schedule the best content in your industry.</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-md-4">
+                <div class="left">
+                    <div class="text-center" data-aos="fade-right">
+
+                        <div class="round-icon">
+                            <i class="lni lni-alarm-clock" style="font-size: 7vh"></i>
+                        </div>
+
+                        <h5 class="text-center">Strategic Social Media Planning</h5>
+                    </div>
+
+                    <div class="flex-box container">
+                        Social media is all about strategy. Looking at posting times, audience,
+                        and what kind of content you are putting out is important in creating a
+                        successful social media presence. Content scheduling allows you to get a
+                        birds-eye view of the content you publish.
+
+                        Another benefit of content scheduling is that you can plan out promotions,
+                        ads, and posts in advance to make sure they all correspond and are sent
+                        out in a timely manner. This will enable you to reach your specific
+                        target market by scheduling all posts and social media updates during
+                        selective times during your promotion. By planning out your promotions
+                        in advance, you have a better chance of reaching more of your target market,
+                        staying on track with posts, and creating a successful promotion for
+                        your business.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-md-4">
+                <div class="right">
+                    <div class="text-center" data-aos="fade-left">
+                        <div class="round-icon">
+                            <i class="lni lni-cloud" style="font-size: 7vh"></i>
+                        </div>
+                        <h5 class="text-center">Stay Organized</h5>
+                    </div>
+
+                    <div class="flex-box container" data-aos="fade-left">
+                        Scheduling out your content in advance also helps you to
+                        stay organized. If you are working with a marketing team
+                        or graphic designers, you will be able to create or request
+                        graphics beforehand, and your design team will be grateful
+                        to have more time to work on them. This will also allow you
+                        to write down any important dates and holidays in advance so
+                        you don’t forget to post for them. National Donut Day may not
+                        seem important but plan a day to grab some donuts for your team,
+                        take a picture, and share it on Donut Day to show off your business's
+                        personality and really get in touch with your followers. People
+                        will “eat it up”!
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-md-4">
+                <div class="right">
+                    <div class="text-center" data-aos="fade-left">
+                        <div class="round-icon">
+                            <i class="lni lni-pencil" style="font-size: 7vh"></i>
+                        </div>
+                        <h5 class="text-center">Write While You Feel Creative</h5>
+                    </div>
+
+                    <div class="flex-box container" data-aos="fade-left">
+                        It is a proven fact that certain times of the day are more conducive to creative writing.
+                        The benefit of creating all of your content at once is that you can select a time when
+                        you are feeling most creative to sit down and create relevant, diverse, and authentic
+                        content for your business.
+
+                        *Pro Tip: We follow the 70-20-10 Rule for content creation, meaning 70% of the content
+                        should be interesting, inspiring, or entertaining, and useful for the primary base of
+                        your audience. 20% of your content should be concentrated on promotional offerings,
+                        whether it be an invitation to an event, a request for donation, or some other
+                        call-to-action. 10% of your content should be reposted or shared from other accounts,
+                        blogs, or content sources, allowing you to show that your Social Media strategy actually
+                        is social; building trust and a sense of reciprocity with your followers and influencers.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-sm-12 text-center">
+                <a class="btn wimax-btn btn-2 ml-2 wow fadeInUp" href="#" data-wow-delay="0.5s">{{"Learn More"}}</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <picture>
+                    <img src="{{asset('themes/frontend/wimax/assets/img/bg-img/instagram-reels-scheduling.webp')}}">
+                </picture>
+            </div>
+            <div class="col-md-4">
+                <h4 class="" style="color: #747794">It’s here! Schedule Instagram Reels on Later</h4>
+                <p>
+                    Can you post Reels on Later? Yup! Visually plan
+                    & schedule Reels to auto-publish whenever you want.
+                    Moderate & reply to comments using the Conversations tool,
+                    and get detailed Reels Analytics to optimize all of your posts.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 8%">
+            <div class="col-md-4">
+                <h4 class="" style="color: #747794">Auto publish TikTok posts, Instagram feed posts, & more</h4>
+                <p>
+                    Can you post Reels on Later? Yup! Visually plan & schedule Reels to
+                    auto-publish whenever you want. Moderate & reply to comments using
+                    the Conversations tool, and get detailed Reels Analytics to optimize
+                    all of your posts.
+                </p>
+            </div>
+
+            <div class="col-md-8">
+                <picture>
+                    <img src="{{asset('themes/frontend/wimax/assets/img/bg-img/home-auto-publish.webp')}}">
+                </picture>
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 8%">
+            <div class="col-md-8">
+                <picture>
+                    <img src="{{asset('themes/frontend/wimax/assets/img/bg-img/Hp--UGC-d9cb0459.webp')}}">
+                </picture>
+            </div>
+            <div class="col-md-4">
+                <h4 class="" style="color: #747794">Find and share the right content</h4>
+                <p>
+                    No time to create content? No problem. Later helps you find on-brand content, add your
+                    own personal touch, and share to your Instagram, Facebook, Twitter and Pinterest
+                    social channels in just a few clicks.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
 {{--    Social--}}
-    <section style="padding-bottom: 40px">
+    <section style="padding-bottom: 40px; margin-top: 5%">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-sm-6 col-md-6"  style="border-right: 1px solid rgba(0,0,0,.2);">
@@ -423,28 +609,36 @@
         </div>
     </section>
 
-{{--    get started for free section--}}
-    <section class="using_benefits_area section_padding_130" id="benefits">
-        <div class="benefit-top-thumbnail"><img height="100" src="{{ asset('themes/frontend/wimax/assets/img/core-img/video-bottom.png')}}" alt=""></div>
-        <div class="benefit-bottom-thumbnail"><img height="100" src="{{ asset('themes/frontend/wimax/assets/img/core-img/benefit-bottom.png')}}" alt=""></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-6 col-lg-6">
-                    <div class="white text-center" data-aos="fade-right">
-                        <h5 class="text-white">SOCIAL MEDIA MARKETING</h5>
-                        <h3 class="text-white">One easy-to-use tool to schedule better posts</h3>
-                        <h5 class="text-white">Schedule the best content in your industry.</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-lg-6">
-                    <div class="text-center" data-aos="fade-left">
-                        <a class="btn wimax-btn btn-4">GET STARTED</a>
-                        <p class="text-white">get started for free section, go to signup.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+{{--    benifits section--}}
+{{--<section class="using_benefits_area section_padding_130">--}}
+{{--    <div class="benefit-top-thumbnail"><img height="100" src="{{ asset('themes/frontend/wimax/assets/img/core-img/video-bottom.png')}}" alt=""></div>--}}
+{{--    <div class="benefit-bottom-thumbnail"><img height="100" src="{{ asset('themes/frontend/wimax/assets/img/core-img/benefit-bottom.png')}}" alt=""></div>--}}
+{{--    <div class="container">--}}
+{{--        <div class="row justify-content-center">--}}
+{{--            <div class="col-md-3 col-sm-6 col-lg-6">--}}
+{{--                <div class="white text-center" data-aos="fade-right">--}}
+{{--                    <h5 class="text-white">SOCIAL MEDIA MARKETING</h5>--}}
+{{--                    <h3 class="text-white">One easy-to-use tool to schedule better posts</h3>--}}
+{{--                    <h5 class="text-white">Schedule the best content in your industry.</h5>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-6 col-sm-6 col-lg-6">--}}
+{{--                <div class="text-center" data-aos="fade-left">--}}
+{{--                    <a class="btn wimax-btn btn-4">GET STARTED</a>--}}
+{{--                    <p class="text-white">get started for free section, go to signup.</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
+
+
 
 {{--    Extra Performance--}}
     <section class="work_process_area section_padding_130_80">
@@ -495,8 +689,8 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-8 col-lg-6">
                     <div class="section_heading white text-center" data-aos="fade-left">
-                        <h3>{{"Our Happy Clients"}}</h3>
-                        <p>{{"Which one of the following groups of items is included in India’s foreign-exchange reserves."}}</p>
+                        <h3>{{"Our Clients"}}</h3>
+                        <p>{{"Trusted by 10,000 customers worldwide"}}</p>
                         <div class="line"></div>
                     </div>
                 </div>
@@ -576,20 +770,574 @@
         </div>
     </div>
 
-{{--    Sed ut perspiciatis--}}
-    <div class="download_app_area section_padding_130_80" id="download">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_heading white text-center" data-aos="fade-left">
-                        <h3>{{"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"}}</h3>
-                        <div class="line bg-white"></div>
-                        <a class="btn wimax-btn mt-30" href="{{ url("signup") }}">{{"Get Started for free"}}</a>
+
+{{--Pricing sections--}}
+<section class="download_app_area section_padding_130_80" id="pricing">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-6">
+                <div class="section_heading white text-center" data-aos="fade-left">
+                    <h3>{{"Pricing Plan"}}</h3>
+                    <p>{{"Choose the plan that's right for your growing team!"}}</p>
+                    <div class="plan-option">
+                        <p>Monthly</p>
+                        <label class="switch pricing-tab-switcher">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <p>Annually</p>
                     </div>
+                    <span class="text-white">Save up to 20%!</span>
+                    <div class="line"></div>
                 </div>
             </div>
         </div>
+
+        <div class="row justify-content-center">
+            <!-- Single Price Plan Area-->
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="single_price_plan wow fadeInUp animated" data-wow-delay="0.2s"
+                     style="visibility: visible; animation-delay: 0.2s;">
+                    <div class="title">
+                        <h3>Google Sit Kit</h3>
+                        <p>Google LLC is an American multinational technology company that focuses on artificial
+                            intelligence, search engine, online advertising, cloud computing, computer software,
+                            quantum computing, e-commerce, and consumer electronics.</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price">
+                        <div class="annual_price">
+                            <h4 class="price">$2000<span class="fw-4 fs-18">/month</span></h4>
+                            <i type="button" class="lni lni-question-circle">
+                                <span>This plan is yearly</span>
+                            </i>
+                        </div>
+                        <div class="monthly_price">
+                            <h4 class="price">$1500<span class="fw-4 fs-18">/month</span></h4>
+                            <i type="button" class="lni lni-question-circle">
+                                <span>This plan is monthly</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="">
+
+                        <div class="plan-group">
+                            <div class="text-large">Add up to 0 social accounts</div>
+                            <div class="small">3 social account on each platform</div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p></p><h6>Scheduling &amp; Report</h6>
+                        <p></p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Facebook scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Instagram scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Twitter scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+
+
+                        <p></p><h6>Advance features</h6>
+                        <p></p>
+
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Spintax support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>Watermark support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>Image Editor support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+
+                        <p>
+                            <i class="lni-close"></i>
+
+                            <span>Cloud import: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-close"></i>
+                            <span>File type: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Storage: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Max. file size: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                    </div>
+                    <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
+                                           href="#"
+                                           data-tmp="#">
+                            Pay now</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="single_price_plan wow fadeInUp animated" data-wow-delay="0.2s"
+                     style="visibility: visible; animation-delay: 0.2s;">
+                    <div class="title">
+                        <h3>Telecom Service</h3>
+                        <p>America Telecom Service</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price">
+                        <div class="annual_price">
+                            <h4 class="price">$1300<span class="fw-4 fs-18">/month</span></h4>
+                            <i type="button" class="lni lni-question-circle">
+                                <span>This plan is yearly</span>
+                            </i>
+                        </div>
+                        <div class="monthly_price">
+                            <h4 class="price">$1200<span class="fw-4 fs-18">/month</span></h4>
+                            <i type="button" class="lni lni-question-circle">
+                                <span>This plan is monthly</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="">
+
+                        <div class="plan-group">
+                            <div class="text-large">Add up to 0 social accounts</div>
+                            <div class="small">9 social account on each platform</div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p></p><h6>Scheduling &amp; Report</h6>
+                        <p></p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Facebook scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Instagram scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Twitter scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+
+
+                        <p></p><h6>Advance features</h6>
+                        <p></p>
+
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Spintax support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>Watermark support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>Image Editor support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+
+                        <p>
+                            <i class="lni-close"></i>
+
+                            <span>Cloud import: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-close"></i>
+                            <span>File type: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Storage: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Max. file size: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                    </div>
+                    <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
+                                           href="#"
+                                           data-tmp="#">Pay
+                            now</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="single_price_plan wow fadeInUp animated" data-wow-delay="0.2s"
+                     style="visibility: visible; animation-delay: 0.2s;">
+                    <div class="title">
+                        <h3>Microsoft Web</h3>
+                        <p>Web is powerful complete solution for you</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price">
+                        <div class="annual_price">
+                            <h4 class="price">$150<span class="fw-4 fs-18">/month</span></h4>
+                            <i type="button" class="lni lni-question-circle">
+                                <span>This plan is yearly</span>
+                            </i>
+                        </div>
+                        <div class="monthly_price">
+                            <h4 class="price">$100<span class="fw-4 fs-18">/month</span></h4>
+                            <i type="button" class="lni lni-question-circle">
+                                <span>This plan is monthly</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="">
+
+                        <div class="plan-group">
+                            <div class="text-large">Add up to 0 social accounts</div>
+                            <div class="small">5 social account on each platform</div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p></p><h6>Scheduling &amp; Report</h6>
+                        <p></p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Facebook scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Instagram scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>
+                    Twitter scheduling &amp; report
+                    <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+                    </span>
+                        </p>
+
+
+                        <p></p><h6>Advance features</h6>
+                        <p></p>
+
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Spintax support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>Watermark support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p>
+                            <i class="lni-close"></i>
+                            <span>Image Editor support
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+
+                        <p>
+                            <i class="lni-close"></i>
+
+                            <span>Cloud import: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-close"></i>
+                            <span>File type: Unsupported
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Storage: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                        <p class="have">
+                            <i class="lni-check-mark-circle"></i>
+                            <span>Max. file size: 0MB
+              <i type="button" class="lni lni-question-circle">
+                        <span>this plan is free</span>
+                    </i>
+              </span>
+                        </p>
+                    </div>
+                    <div class="button"><a class="btn wimax-btn btn-2 btn-payment"
+                                           href="#"
+                                           data-tmp="#">
+                            Pay now</a></div>
+                </div>
+            </div>
+
+{{--            <div class="col-12 col-sm-8 col-md-6 col-lg-4">--}}
+{{--                <div class="single_price_plan wow fadeInUp animated" data-wow-delay="0.2s"--}}
+{{--                     style="visibility: visible; animation-delay: 0.2s;">--}}
+{{--                    <div class="title">--}}
+{{--                        <h3>Jio Mobile Reacharge</h3>--}}
+{{--                        <p>Angular is a TypeScript-based free and open-source web application framework led by the--}}
+{{--                            Angular Team at Google and by a community of individuals and corporations. Angular is a--}}
+{{--                            complete rewrite from the same team that built AngularJS.</p>--}}
+{{--                        <div class="line"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="price">--}}
+{{--                        <div class="annual_price">--}}
+{{--                            <h4 class="price">$450<span class="fw-4 fs-18">/month</span></h4>--}}
+{{--                            <i type="button" class="lni lni-question-circle">--}}
+{{--                                <span>This plan is yearly</span>--}}
+{{--                            </i>--}}
+{{--                        </div>--}}
+{{--                        <div class="monthly_price">--}}
+{{--                            <h4 class="price">$400<span class="fw-4 fs-18">/month</span></h4>--}}
+{{--                            <i type="button" class="lni lni-question-circle">--}}
+{{--                                <span>This plan is monthly</span>--}}
+{{--                            </i>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="">--}}
+
+{{--                        <div class="plan-group">--}}
+{{--                            <div class="text-large">Add up to 0 social accounts</div>--}}
+{{--                            <div class="small">9 social account on each platform</div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="description">--}}
+{{--                        <p></p><h6>Scheduling &amp; Report</h6>--}}
+{{--                        <p></p>--}}
+{{--                        <p>--}}
+{{--                            <i class="lni-close"></i>--}}
+{{--                            <span>--}}
+{{--                    Facebook scheduling &amp; report--}}
+{{--                    <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--                    </span>--}}
+{{--                        </p>--}}
+{{--                        <p>--}}
+{{--                            <i class="lni-close"></i>--}}
+{{--                            <span>--}}
+{{--                    Instagram scheduling &amp; report--}}
+{{--                    <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--                    </span>--}}
+{{--                        </p>--}}
+{{--                        <p>--}}
+{{--                            <i class="lni-close"></i>--}}
+{{--                            <span>--}}
+{{--                    Twitter scheduling &amp; report--}}
+{{--                    <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--                    </span>--}}
+{{--                        </p>--}}
+
+
+{{--                        <p></p><h6>Advance features</h6>--}}
+{{--                        <p></p>--}}
+
+{{--                        <p class="have">--}}
+{{--                            <i class="lni-check-mark-circle"></i>--}}
+{{--                            <span>Spintax support--}}
+{{--              <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--              </span>--}}
+{{--                        </p>--}}
+{{--                        <p>--}}
+{{--                            <i class="lni-close"></i>--}}
+{{--                            <span>Watermark support--}}
+{{--              <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--              </span>--}}
+{{--                        </p>--}}
+{{--                        <p>--}}
+{{--                            <i class="lni-close"></i>--}}
+{{--                            <span>Image Editor support--}}
+{{--              <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--              </span>--}}
+{{--                        </p>--}}
+
+{{--                        <p>--}}
+{{--                            <i class="lni-close"></i>--}}
+
+{{--                            <span>Cloud import: Unsupported--}}
+{{--              <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--              </span>--}}
+{{--                        </p>--}}
+{{--                        <p class="have">--}}
+{{--                            <i class="lni-close"></i>--}}
+{{--                            <span>File type: Unsupported--}}
+{{--              <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--              </span>--}}
+{{--                        </p>--}}
+{{--                        <p class="have">--}}
+{{--                            <i class="lni-check-mark-circle"></i>--}}
+{{--                            <span>Storage: 0MB--}}
+{{--              <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--              </span>--}}
+{{--                        </p>--}}
+{{--                        <p class="have">--}}
+{{--                            <i class="lni-check-mark-circle"></i>--}}
+{{--                            <span>Max. file size: 0MB--}}
+{{--              <i type="button" class="lni lni-question-circle">--}}
+{{--                        <span>this plan is free</span>--}}
+{{--                    </i>--}}
+{{--              </span>--}}
+{{--                        </p>--}}
+{{--                    </div>--}}
+{{--                    <div class="button"><a class="btn wimax-btn btn-2 btn-payment"--}}
+{{--                                           href="#"--}}
+{{--                                           data-tmp="#">Pay--}}
+{{--                            now</a></div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+
+        </div>
     </div>
+</section>
+
+{{--    Sed ut perspiciatis--}}
+{{--    <div class="download_app_area section_padding_130_80" id="download">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-12">--}}
+{{--                    <div class="section_heading white text-center" data-aos="fade-left">--}}
+{{--                        <h3>{{"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"}}</h3>--}}
+{{--                        <div class="line bg-white"></div>--}}
+{{--                        <a class="btn wimax-btn mt-30" href="{{ url("signup") }}">{{"Get Started for free"}}</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 @endsection
 
 @section('specific_js')
