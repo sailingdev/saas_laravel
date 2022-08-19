@@ -66,7 +66,6 @@
             width: 650px;
         }
 
-
         .round-icon {
             position: relative;
             z-index: 1;
@@ -441,83 +440,9 @@
 </section>
 
 
-{{--    Social--}}
-    <section style="padding-bottom: 40px; margin-top: 5%">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6 col-md-6"  style="border-right: 1px solid rgba(0,0,0,.2);">
-                    <div class="left">
-                        <div class="text-center" data-aos="fade-right">
-                            <img src="{{asset('themes/social_logo/schedule-icon.webp')}}" width="65px" height="65px" alt="schedule-icon">
-                            <h2 class="text-center"> Schedule posts </h2>
-                            <h4 class="text-center">to top networks</h4>
-                        </div>
-
-                        <div class="flex-box container">
-                            <div class="detail_box text-center" data-aos="fade-right">
-                                <img width="58" src="{{asset('themes/social_logo/facebook-new.svg')}}" alt="Facebook">
-                                <h5 class="text-center">Facebook</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-right">
-                                <img width="58p" src="{{asset('themes/social_logo/instagram-new.svg')}}" alt="Instagram">
-                                <h5 class="text-center">Instagram</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-right">
-                                <img width="58" src="{{asset('themes/social_logo/twitter-new.svg')}}" alt="Twitter">
-                                <h5 class="text-center">Twitter</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-right">
-                                <img width="58" src="{{asset('themes/social_logo/linkedin-new.svg')}}" alt="LinkedIn">
-                                <h5 class="text-center">LinkedIn</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-right">
-                                <img width="58" src="{{asset('themes/social_logo/pinterest-new.svg')}}" alt="Pinterest">
-                                <h5 class="text-center">Pinterest</h5>
-                            </div>
-
-                            <div class="detail_box text-center" data-aos="fade-right">
-                                <img width="58" src="{{asset('themes/social_logo/TikTok.svg')}}" alt="TikTok">
-                                <h5 class="text-center">TikTok</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-sm-6 col-md-6">
-                    <div class="right">
-                        <div class="text-center" data-aos="fade-left">
-                            <img src="{{asset('themes/social_logo/curate-icon.webp')}}" width="48px" height="65px" alt="schedule-icon">
-                            <h2 class="text-center"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h2>
-                            <h4 class="text-center">Etiam ultricies nisi vel augue.</h4>
-                        </div>
-
-                        <div class="flex-box text-center container" data-aos="fade-left">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                            parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                            pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
-                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                            mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                            vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-                            tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-                            imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-                            Nam eget dui.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 {{--    Features section--}}
     <section class="about_area" style="padding-top: 90px" id="features">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-8 col-lg-6">
                     <div class="section_heading text-center" data-aos="fade-right">
@@ -526,8 +451,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-md-3 col-lg-3">
                     <div class="about_product_discription">
                         <div class="row">
                             <div class="col-12">
@@ -554,7 +479,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-8 col-md-3 col-lg-3">
                     <div class="about_product_discription">
                         <div class="row">
                             <div class="col-12">
@@ -579,7 +504,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-8 col-md-3 col-lg-3">
                     <div class="about_product_discription">
                         <div class="row">
                             <div class="col-12">
@@ -601,6 +526,59 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-sm-8 col-md-3 col-lg-3">
+                    <div class="about_product_discription">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="single_about_part" data-aos="fade-left">
+                                    <div class="feature_icon">
+                                        <i class="lni lni-bookmark-alt"></i>
+                                    </div>
+                                    <h6>Watermark</h6>
+                                    <p>Easily add watermark to your images with intuitive interface.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="single_about_part" data-aos="fade-right">
+                                    <div class="feature_icon"><i class="lni lni-files"></i></div>
+                                    <h6>File manager</h6>
+                                    <p>Authorized dealers are free to surrendered to them for sale.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-50">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div class="text-center" data-aos="fade-right">
+                            <img src="{{asset('themes/social_logo/schedule-icon.webp')}}" width="65px" height="65px" alt="schedule-icon">
+                            <h2 class="text-center"> Schedule posts </h2>
+                            <h4 class="text-center">to top networks</h4>
+                        </div>
+
+                        <div class="flex-box container">
+                            <div class="detail_box text-center" data-aos="fade-right">
+                                <img width="58" src="{{asset('themes/social_logo/facebook-new.svg')}}" alt="Facebook">
+                                <h5 class="text-center">Facebook</h5>
+                            </div>
+
+                            <div class="detail_box text-center" data-aos="fade-right">
+                                <img width="58p" src="{{asset('themes/social_logo/instagram-new.svg')}}" alt="Instagram">
+                                <h5 class="text-center">Instagram</h5>
+                            </div>
+
+                            <div class="detail_box text-center" data-aos="fade-right">
+                                <img width="58" src="{{asset('themes/social_logo/twitter-new.svg')}}" alt="Twitter">
+                                <h5 class="text-center">Twitter</h5>
+                            </div>
+
+                        </div>
+                </div>
+
             </div>
         </div>
 
@@ -613,70 +591,6 @@
 
 
 
-
-
-{{--    benifits section--}}
-{{--<section class="using_benefits_area section_padding_130">--}}
-{{--    <div class="benefit-top-thumbnail"><img height="100" src="{{ asset('themes/frontend/wimax/assets/img/core-img/video-bottom.png')}}" alt=""></div>--}}
-{{--    <div class="benefit-bottom-thumbnail"><img height="100" src="{{ asset('themes/frontend/wimax/assets/img/core-img/benefit-bottom.png')}}" alt=""></div>--}}
-{{--    <div class="container">--}}
-{{--        <div class="row justify-content-center">--}}
-{{--            <div class="col-md-3 col-sm-6 col-lg-6">--}}
-{{--                <div class="white text-center" data-aos="fade-right">--}}
-{{--                    <h5 class="text-white">SOCIAL MEDIA MARKETING</h5>--}}
-{{--                    <h3 class="text-white">One easy-to-use tool to schedule better posts</h3>--}}
-{{--                    <h5 class="text-white">Schedule the best content in your industry.</h5>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-md-6 col-sm-6 col-lg-6">--}}
-{{--                <div class="text-center" data-aos="fade-left">--}}
-{{--                    <a class="btn wimax-btn btn-4">GET STARTED</a>--}}
-{{--                    <p class="text-white">get started for free section, go to signup.</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
-
-
-
-{{--    Extra Performance--}}
-    <section class="work_process_area section_padding_130_80">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-lg-6">
-                    <div class="section_heading text-center" data-aos="fade-left">
-                        <h3>{{"Extra Performance"}}</span></h3>
-                        <p>{{"Some extra core features available"}}</p>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-between">
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step" data-aos="fade-right">
-                        <div class="step-icon"><i class="lni lni-bookmark-alt"></i></div>
-                        <h5>{{"Watermark"}}</h5>
-                        <p>{{"Easily add watermark to your images with intuitive interface"}}</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step" data-aos="fade-left">
-                        <div class="step-icon"><i class="lni lni-files"></i></div>
-                        <h5>{{"File manager"}}</h5>
-                        <p>{{"Authorized dealers are free to surrendered to them for sale."}}</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step" data-aos="fade-right">
-                        <div class="step-icon"><i class="lni lni-network"></i></div>
-                        <h5>{{"Group manager"}}</h5>
-                        <p>{{"Managing all of your accounts in groups saves you time"}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <div class="container">
         <div class="border-top"></div>
     </div>
