@@ -29,6 +29,7 @@
         }
     </style>
 @endsection
+
 @section('content')
 
     <!-- Breadcrumb Area-->
@@ -53,9 +54,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 
 

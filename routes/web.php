@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-// user panel
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', "WimaxController@index");
 Route::get('/pricing', 'WimaxController@pricing');
 Route::get('/blog/{id?}', 'WimaxController@blog');
@@ -32,7 +29,10 @@ Route::get('/callback/{provider}', 'SocialController@callback');
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard','WimaxController@dashboard');
+    Route::get('/home','HomeController@index');
+    Route::get('/dashboard','DashboardController@index');
+
+
 });
 
 
