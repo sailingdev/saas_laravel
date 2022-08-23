@@ -55,11 +55,9 @@
         /*     line-height: 1.2; */
         /*}*/
 
-
         .below_subheader .box-search-one{
             margin: 5px 5px 5px 5px;
         }
-
 
         .menu-item a.menu-item-active {
             color: #a48ffa!important;
@@ -70,12 +68,8 @@
             border-radius: 4px;
             padding: 9px;
         }
-
-
-
     </style>
 @endsection
-
 
 @section('content')
     <div class="subheader {{Helper::class_main(1)}}">
@@ -84,7 +78,7 @@
                 <div class="wrap-c">
                     <button type="button" class="btn btn-label-info m-r-10 subheader-toggle"><i class="fas fa-bars"></i>
                     </button>
-                    <h3 class="title"><i class="fas fa-home" style="color: #1ac958"></i> Home</h3>
+                    <h3 class="title"><i class="fas fa-home text-info" style="color: #1ac958"></i> Home</h3>
                 </div>
             </div>
         </div>
@@ -113,13 +107,12 @@
                             <a href="#" >Recurring Posts</a>
                             <a href="#" >Your Draft</a>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+
 
 
 

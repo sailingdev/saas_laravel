@@ -1,0 +1,148 @@
+/*Watermark*/
+.watermark .watermark-content > .watermark-option{
+	height: 100%;
+}
+
+.watermark .watermark-image{
+	position: relative;
+}
+
+.watermark .watermark-image img{
+	width: 100%;
+}
+
+.watermark .watermark-image .watermark-mask{
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.watermark-positions{
+	width: 99px;
+}
+
+.watermark-positions .watermark-position-item{
+	width: 22px;
+	height: 22px;
+	background-color: #f5f5f5;
+	float: left;
+	margin: 0 1.5px 3px;
+	background-image: url(../img/sprite-directions-arrows.png);
+}
+
+.watermark-positions .watermark-position-item.pos-ct{
+	background-position: 43px 0px;
+}
+
+.watermark-positions .watermark-position-item.pos-rt{
+    background-position: 21px 0px;
+}
+
+.watermark-positions .watermark-position-item.pos-lc{
+	background-position: 0 -22px;
+}
+
+.watermark-positions .watermark-position-item.pos-cc{
+	background-position: 43px -22px;
+}
+
+.watermark-positions .watermark-position-item.pos-rc{
+	background-position: 21px -22px;
+}
+
+.watermark-positions .watermark-position-item.pos-lb{
+	background-position: 0 -44px;
+}
+
+.watermark-positions .watermark-position-item.pos-cb{
+	background-position: 43px -44px;
+}
+
+.watermark-positions .watermark-position-item.pos-rb{
+	background-position: 21px -44px;
+}
+
+
+.watermark-positions .watermark-position-item.pos-lt.active,.watermark-positions .watermark-position-item.pos-lt:hover{
+	background-position: 0 -66px;
+}
+
+.watermark-positions .watermark-position-item.pos-ct.active,.watermark-positions .watermark-position-item.pos-ct:hover{
+	background-position: 43px -66px;
+}
+
+.watermark-positions .watermark-position-item.pos-rt.active,.watermark-positions .watermark-position-item.pos-rt:hover{
+    background-position: 21px -66px;
+}
+
+.watermark-positions .watermark-position-item.pos-lc.active,.watermark-positions .watermark-position-item.pos-lc:hover{
+	background-position: 0 -87.5px;
+}
+
+.watermark-positions .watermark-position-item.pos-cc.active,.watermark-positions .watermark-position-item.pos-cc:hover{
+	background-position: 43px -89px;
+}
+
+.watermark-positions .watermark-position-item.pos-rc.active,.watermark-positions .watermark-position-item.pos-rc:hover{
+	background-position: 21px -87.5px;
+}
+
+.watermark-positions .watermark-position-item.pos-lb.active,.watermark-positions .watermark-position-item.pos-lb:hover{
+	background-position: 0 -110px;
+}
+
+.watermark-positions .watermark-position-item.pos-cb.active,.watermark-positions .watermark-position-item.pos-cb:hover{
+	background-position: 43px -110px;
+}
+
+.watermark-positions .watermark-position-item.pos-rb.active,.watermark-positions .watermark-position-item.pos-rb:hover{
+	background-position: 21px -110px;
+}
+
+.watermark .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.watermark .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.watermark .irs--flat .irs-bar{
+	background-color: #5578eb;
+}
+
+.watermark .irs--flat .irs-from, 
+.watermark .irs--flat .irs-to,
+.watermark .irs--flat .irs-single{
+	background-color: #5578eb;
+}
+
+.watermark .irs--flat .irs-from:before,
+.watermark .irs--flat .irs-to:before,
+.watermark .irs--flat .irs-single:before{
+	border-top-color: #5578eb;
+}
+
+.watermark .irs--flat .irs-handle>i:first-child{
+	background-color: #5578eb;
+}
+
+.watermark .irs--flat .irs-line{
+	background-color: #f4f4f4;
+}
+
+.watermark .irs--flat .irs-min,
+.watermark .irs--flat .irs-max{
+	color: #212529;
+    background-color: rgba(85,120,235,.1);
+}
+/*Watermark End*/

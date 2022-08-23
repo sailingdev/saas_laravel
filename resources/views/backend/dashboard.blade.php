@@ -6,7 +6,7 @@
                 <div class="wrap-c">
                     <button type="button" class="btn btn-label-info m-r-10 subheader-toggle"><i class="fas fa-bars"></i>
                     </button>
-                    <h3 class="title"><i class="fas fa-desktop" style="color: #1ac958"></i> Dashboard</h3>
+                    <h3 class="title"><i class="fas fa-desktop text-info" style="color: #1ac958"></i> Dashboard</h3>
                 </div>
             </div>
         </div>

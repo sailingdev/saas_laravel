@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mgp25/instagram-php": "^7.0",
+        "facebook/graph-sdk": "^5.7"
+    }
+}
