@@ -21,15 +21,15 @@ button, input, optgroup, select, textarea, .ui-widget{
 }
 
 .header{
-	height: 65px;
-	position: fixed;
-	top: 0;
-	right: 0;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 100;
-	width: 100%;
+    width: 100%;
     width: -webkit-calc(100% - 275px);
-	width: calc(100% - 275px);
-	border-bottom: 1px solid #f4f4f4;
+    width: calc(100% - 275px);
+    border-bottom: 1px solid #f4f4f4;
     background: #fff;
     padding: 10px;
     z-index: 1000;
@@ -137,7 +137,7 @@ button, input, optgroup, select, textarea, .ui-widget{
     height: calc(100%);
     width: 275px;
     background: #fff;
-	border-right: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
     color: rgba(163,175,183,.9);
     -webkit-transition: width .25s,opacity .25s,-webkit-transform .25s;
     -o-transition: width .25s,opacity .25s,-o-transform .25s;
@@ -167,21 +167,21 @@ button, input, optgroup, select, textarea, .ui-widget{
 }
 
 .sidebar .logo{
-	text-align: center;
+    text-align: center;
     padding: 13px 15px;
 }
 
 .sidebar .logo img{
     height: 39px;
-	display: inline-block;
+    display: inline-block;
 }
 
 .sidebar .logo .logo-full{
     height: 39px;
     max-width: 100%;
     text-align: left;
-    display: block; 
-    padding-right: 15px; 
+    display: block;
+    padding-right: 15px;
 }
 
 .sidebar .logo .logo-small{
@@ -209,7 +209,7 @@ button, input, optgroup, select, textarea, .ui-widget{
     height: 1px;
     background: #f4f4f4;
     text-align: center;
-} 
+}
 
 .sidebar .menu .menu-item{
     position: relative;
@@ -465,7 +465,7 @@ body#sidebar-dark .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger{
 .subheader .wrap {
     display: -webkit-box;
     display: -ms-flexbox;
-     display: flex; 
+    display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -676,8 +676,8 @@ body#sidebar-dark .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger{
     }
 
     .sidebar-small .wrapper, .sidebar-open .wrapper{
-            margin-left: 0;
-            width: 100%;
+        margin-left: 0;
+        width: 100%;
     }
 
     .sidebar-small .subheader, .sidebar-open .subheader{
@@ -714,7 +714,7 @@ body#sidebar-dark .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger{
 
     .subheader-open .subheader-toggle:after{
         font-family: "Font Awesome 5 Free";
-        font-weight: 900; 
+        font-weight: 900;
         content: "\f00d";
     }
 
@@ -729,7 +729,7 @@ body#sidebar-dark .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger{
 
     .subheader-right-open .subheader-right-toggle:after{
         font-family: "Font Awesome 5 Free";
-        font-weight: 900; 
+        font-weight: 900;
         content: "\f054";
     }
 
@@ -789,11 +789,11 @@ body#sidebar-dark .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger{
     /*End subheader*/
 
     .subheadline .sh-main{
-        margin-bottom: 15px;        
+        margin-bottom: 15px;
     }
 
     .subheadline .sh-toolbar{
-        margin-bottom: 15px;        
+        margin-bottom: 15px;
     }
 
     .table-mod{
@@ -871,7 +871,7 @@ body#sidebar-dark .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger{
 
 @media (max-width: 400px) {
     .subheader .title{
-        
+
     }
 }
 
@@ -1132,7 +1132,7 @@ body#full-dark .sidebar .menu .menu-item a{
 }
 
 body#full-dark .sidebar .menu .menu-item a:hover{
-        background-color: #a590fa;
+    background-color: #a590fa;
     color: #fff;
 }
 
@@ -1212,7 +1212,7 @@ body#full-dark .card{
 body#full-dark .card .card-header{
     background: #192038;
     border-bottom: 1px solid #323a5f;
-    
+
 }
 
 body#full-dark .widget-list .widget-item .icon.border{
@@ -1425,7 +1425,7 @@ body#full-dark .group-manager .group-panel{
 }
 
 body#full-dark .card-footer{
-     border-top: 1px solid #323a5f;
+    border-top: 1px solid #323a5f;
 }
 
 body#full-dark .group-manager .group-panel .group-list .group-item{
@@ -1512,7 +1512,7 @@ body#full-dark .post .post-advance .advance-content{
 
 body#full-dark [class*="-activity"] [class*="-ac-basic-info"]{
     border: 1px solid #323a5f;
-}    
+}
 
 body#full-dark [class*="-activity"] [class*="-ac-basic-info"] .status{
     border-top: 1px solid #323a5f;
@@ -1773,4 +1773,3 @@ body#full-dark .emojionearea .emojionearea-button>div
         min-width: 50%;
     }
 }
-

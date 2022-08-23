@@ -3,6 +3,10 @@
 namespace App\Helper;
 
 use App\Option;
+use App\Team;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Request;
+use function JBZoo\Data\json;
 
 class Helper
 {
@@ -38,7 +42,6 @@ class Helper
                 }
             }
         }
-
         return $module_paths;
     }
 
@@ -51,9 +54,7 @@ class Helper
 
                 $models = $module_path.'/models/*.php';
                 $models = glob($models);
-
                 if(empty($models)) continue;
-
                 foreach ($models as $model)
                 {
                     //Get Directory
@@ -73,27 +74,19 @@ class Helper
                     {
                         return DIR_ROOT.$dir.$folder_name."/";
                     }
-
                 }
-
             }
         }
-
         return false;
     }
 
 
-    function get_data($data, $field, $type = '', $value = '', $class = 'active'){
+    static function get_data($data, $field, $type = '', $value = '', $class = 'active'){
         if( is_array($data) ){
             if(!empty($data) && isset($data[$field]) ){
                 switch ($type) {
-                    case 'checkbox':
-                        if($data[$field] == $value){
-                            return 'checked';
-                        }
-                        break;
-
                     case 'radio':
+                    case 'checkbox':
                         if($data[$field] == $value){
                             return 'checked';
                         }
@@ -113,19 +106,13 @@ class Helper
 
                     default:
                         return $data[$field];
-                        break;
                 }
             }
         }else{
             if(!empty($data) && isset($data->$field) ){
                 switch ($type) {
-                    case 'checkbox':
-                        if($data->$field == $value){
-                            return 'checked';
-                        }
-                        break;
-
                     case 'radio':
+                    case 'checkbox':
                         if($data->$field == $value){
                             return 'checked';
                         }
@@ -145,7 +132,6 @@ class Helper
 
                     default:
                         return $data->$field;
-                        break;
                 }
             }
         }
@@ -280,5 +266,107 @@ class Helper
         return $timezones;
     }
 
+    static function date_show_js(){
+        $format = Helper::get_option('format_date', 'd/m/Y');
+
+        switch ($format) {
+            case 'd M, Y':
+                return "d M, yy";
+            case 'm/d/Y':
+                return "mm/dd/yy";
+            case 'Y-m-d':
+                return "yy-mm-dd";
+            default:
+                return "dd/mm/yy";
+        }
+    }
+
+
+    static function datetime_show_js(){
+        $format = Helper::get_option('format_datetime', 'd/m/Y g:i A');
+
+        switch ($format) {
+            case "m/d/Y g:i A":
+                return '["mm/dd/yy", "hh:mm TT"]';
+
+            case "d/m/Y H:i":
+                return '["dd/mm/yy", "HH:mm"]';
+
+            case "m/d/Y H:i":
+                return '["mm/dd/yy", "HH:mm"]';
+
+            case "Y-m-d g:i A":
+                return '["yy-mm-dd", "hh:mm TT"]';
+
+            case "Y-m-d H:i":
+                return '["yy-mm-dd", "HH:mm"]';
+
+            default:
+                return '["dd/mm/yy", "hh:mm TT"]';
+        }
+    }
+
+    static function segment($index){
+        return Request::segment($index);
+    }
+
+
+    static  function get_url($module=""){
+        return url($module);
+    }
+
+    static function _t( $field = "ids", $tid = 0){
+        if($tid == 0){
+            $tid = Helper::_s('team_id');
+        }else{
+            $tid = Team::select(['ids'])->where('id', $tid)->get();
+        }
+
+        $user = Team::where('ids', $tid)->get();
+
+        if($user && isset($user->$field)){
+            return $user->$field;
+        }
+        return false;
+    }
+
+    static function _s($input){
+        return Auth::user()->$input;
+    }
+
+
+    static function get_reports_list(){
+        $tab_groups = json_decode(file_get_contents(asset('sidebar.json')), true);
+
+
+
+        $menu_groups = [];
+        foreach ($tab_groups as $tab => $data) {
+
+            foreach ($data as $main => $row) {
+
+                if( isset( $row['sub_menu'] ) ){
+                    usort( $row['sub_menu'] , function($a, $b) {
+                        return $a['position'] <=> $b['position'];
+                    });
+
+                    $menu_groups[$tab][$main] = $row;
+                }else{
+                    $menu_groups[$tab][$main] = $row;
+                }
+
+            }
+
+        }
+
+
+        return $menu_groups[2];
+
+    }
+
+
+    static function class_main($index){
+        return str_replace('_', '-', Helper::segment(1));
+    }
 
 }

@@ -1,0 +1,115 @@
+.group-manager .group-manager-content{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.pn-box-content{
+    padding: 0!important;
+}
+
+.group-manager .group-list-wrap{
+    height: calc(100% - 129px);
+}
+
+.group-manager .group-list-wrap .group-col{
+	height: 100%;
+}
+
+.group-manager .group-panel{
+	height: 100%;
+    border-right: 1px solid #f5f5f5;
+}
+
+.group-manager .group-panel .pn-group-header{
+    position: relative;
+    padding: 0 15px;
+    border-top: 1px solid #ebedf2;
+    border-bottom: 1px solid #ebedf2;
+    min-height: 60px;
+    margin: 0;
+    line-height: 60px;
+    background: #fff;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.group-manager .group-panel .group-list{
+    margin-bottom: 0;
+    height: calc(100% - 62px);
+    overflow: hidden;
+}
+
+.group-manager .group-panel .group-list .group-item{
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px dashed #ebedf2;
+    cursor: move;
+}
+
+.group-manager .group-panel .group-list .group-item.ui-sortable-helper{
+    max-width: 300px!important;
+    border: 1px solid #5578eb;
+    border-radius: 4px;
+    background: transparent;
+    background-color: #e9eeff;
+}
+
+.group-manager .group-panel .group-list .group-item:last-child{
+}
+
+.group-manager .group-panel .group-list .group-item .pic{
+    position: absolute;
+    border-radius: 6px;
+    overflow: hidden;
+    left: 15px;
+}
+
+.group-manager .group-panel .group-list .group-item .pic img{
+    border-radius: 6px;
+    border: 1px solid #efefef;
+    width: 40px;
+    height: 40px;
+}
+
+.group-manager .group-panel .group-list .group-item .detail{
+    margin-left: 55px;
+    height: 40px;
+}
+
+.group-manager .group-panel .group-list .group-item .detail .title{
+    display: block;
+    height: 19px;
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.group-manager .group-panel .group-list .group-item .detail .desc{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.action-groups{
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block!important;
+}
+
+@media (max-width: 768px) {
+    .group-manager .group-list-wrap {
+        height: calc(100% - 93px);
+    }
+
+    .group-manager .group-panel .group-list{
+        overflow: scroll;
+    }
+}

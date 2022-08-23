@@ -1,0 +1,109 @@
+{
+    "1": {
+        "Home": {
+            "id": "home",
+            "name": "Home",
+            "icon": "fas fa-home",
+            "color": "#1ac958"
+        },
+        "Dashboard": {
+            "id": "dashboard",
+            "name": "Dashboard",
+            "icon": "fas fa-desktop",
+            "color": "#1ac958"
+        },
+        "Publish all": {
+            "id": "post",
+            "name": "Publish all",
+            "icon": "far fa-paper-plane",
+            "color": "#fa7070"
+        }
+    },
+    "2": {
+        "Facebook": {
+            "id": "facebook_post",
+            "name": "Facebook",
+            "icon": "fab fa-facebook-square",
+            "color": "#3b5998",
+            "sub_menu": [
+                {
+                    "position": 1000,
+                    "id": "facebook_post",
+                    "name": "Post"
+                }
+            ]
+        },
+        "Instagram": {
+            "id": "instagram_post",
+            "name": "Instagram",
+            "icon": "fab fa-instagram",
+            "color": "#d62976",
+            "sub_menu": [
+                {
+                    "position": 1000,
+                    "id": "instagram_post",
+                    "name": "Post"
+                }
+            ]
+        },
+        "Twitter": {
+            "id": "twitter_post",
+            "name": "Twitter",
+            "icon": "fab fa-twitter",
+            "color": "#00acee",
+            "sub_menu": [
+                {
+                    "position": 1000,
+                    "id": "twitter_post",
+                    "name": "Post"
+                }
+            ]
+        }
+    },
+    "4": {
+        "Schedules": {
+            "id": "schedules",
+            "name": "Schedules",
+            "icon": "far fa-calendar-alt",
+            "color": ""
+        },
+        "Account manager": {
+            "id": "account_manager",
+            "name": "Account manager",
+            "icon": "far fa-user-circle",
+            "color": ""
+        },
+        "File manager": {
+            "id": "file_manager",
+            "name": "File manager",
+            "icon": "far fa-folder-open",
+            "color": ""
+        },
+        "Group manager": {
+            "id": "group_manager",
+            "name": "Group manager",
+            "icon": "fas fa-users",
+            "color": ""
+        },
+        "Caption": {
+            "id": "caption",
+            "name": "Caption",
+            "icon": "far fa-list-alt",
+            "color": ""
+        },
+        "Watermark": {
+            "id": "watermark",
+            "name": "Watermark",
+            "icon": "fas fa-medal",
+            "color": ""
+        }
+    },
+    "5": {
+        "User manager": {
+            "id": "user_manager",
+            "name": "User manager",
+            "icon": "far fa-user",
+            "color": ""
+        }
+    }
+}
