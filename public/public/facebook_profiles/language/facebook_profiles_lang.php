@@ -1,0 +1,21 @@
+<?php
+$lang["Facebook profiles"] = "Facebook profiles";
+$lang["Facebook profile"] = "Facebook profile";
+$lang["Success"] = "Success";
+$lang["Please select a profile to add"] = "Please select a profile to add";
+$lang["Facebook"] = "Facebook";
+$lang["Facebook API Configuration"] = "Facebook API Configuration";
+$lang["Add Facebook profile"] = "Add Facebook profile";
+$lang["Add profile"] = "Add profile";
+$lang["Choose the profile you'd like to manage."] = "Choose the profile you'd like to manage.";
+$lang["If you don't see your profiles above, you might try to reconnec, re-accept all permissions, and ensure that you're logged in to the correct profile."] = "If you don't see your profiles above, you might try to reconnec, re-accept all permissions, and ensure that you're logged in to the correct profile.";
+$lang["Re-connect with Facebook"] = "Re-connect with Facebook";
+$lang["Facebook client id"] = "Facebook client id";
+$lang["Facebook client secret"] = "Facebook client secret";
+$lang["Facebook app version"] = "Facebook app version";
+$lang["Facebook API Profile"] = "Facebook API Profile";
+$lang["Login Facebook profile"] = "Login Facebook profile";
+$lang["Disable"] = "Disable";
+$lang["Enable"] = "Enable";
+$lang["Permissions"] = "Permissions";
+$lang["Callback URL:"] = "Callback URL:";

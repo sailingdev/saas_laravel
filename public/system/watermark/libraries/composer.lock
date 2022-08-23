@@ -1,0 +1,236 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7d9370c6cd18fcd7275f7043af7aec66",
+    "packages": [
+        {
+            "name": "jbzoo/data",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JBZoo/Data.git",
+                "reference": "9d28a512584faee48c99e1ec41bd71b6b162714a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JBZoo/Data/zipball/9d28a512584faee48c99e1ec41bd71b6b162714a",
+                "reference": "9d28a512584faee48c99e1ec41bd71b6b162714a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "jbzoo/phpunit": "^3.0",
+                "jbzoo/profiler": "^1.0.5",
+                "jbzoo/utils": "^3.0",
+                "php-coveralls/php-coveralls": "^2.2",
+                "symfony/yaml": "^4.4"
+            },
+            "suggest": {
+                "jbzoo/utils": "^2.3.2|^3.0",
+                "symfony/yaml": "^3.3|^4.4"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "JBZoo\\Data\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SmetDenis",
+                    "email": "denis@jbzoo.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Extended implementation of ArrayObject",
+            "keywords": [
+                "array",
+                "arrayobject",
+                "config",
+                "data",
+                "ini",
+                "json",
+                "params",
+                "yml"
+            ],
+            "time": "2019-11-24T15:33:14+00:00"
+        },
+        {
+            "name": "jbzoo/image",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JBZoo/Image.git",
+                "reference": "0fff34a8f168c7eaec0b3a7d568e8d6883cfb21f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JBZoo/Image/zipball/0fff34a8f168c7eaec0b3a7d568e8d6883cfb21f",
+                "reference": "0fff34a8f168c7eaec0b3a7d568e8d6883cfb21f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "jbzoo/data": "^3.0",
+                "jbzoo/utils": "^3.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "jbzoo/phpunit": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JBZoo\\Image\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SmetDenis",
+                    "email": "denis@jbzoo.com",
+                    "homepage": "http://jbzoo.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Cory LaViska",
+                    "homepage": "http://www.abeautifulsite.net/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nazar Mokrynskyi",
+                    "email": "nazar@mokrynskyi.com",
+                    "homepage": "http://cleverstyle.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP class that simplifies working with images (fork abeautifulsite/simpleimage)",
+            "keywords": [
+                "crop",
+                "filters",
+                "gd",
+                "image",
+                "images",
+                "jbzoo",
+                "resize",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2020-03-11T23:03:52+00:00"
+        },
+        {
+            "name": "jbzoo/utils",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JBZoo/Utils.git",
+                "reference": "14c7146673c34683470d5fb8259081903bc75158"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JBZoo/Utils/zipball/14c7146673c34683470d5fb8259081903bc75158",
+                "reference": "14c7146673c34683470d5fb8259081903bc75158",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "ext-posix": "*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "jbzoo/data": "^3.0.0",
+                "jbzoo/phpunit": "^2.3|^3.0",
+                "jbzoo/profiler": "^1.0.5",
+                "php-coveralls/php-coveralls": "^2.2.0",
+                "symfony/polyfill-mbstring": "^1.12",
+                "symfony/process": "^4.4"
+            },
+            "suggest": {
+                "ext-mbstring": "Provides multibyte specific string functions",
+                "jbzoo/data": "^2.0|^3.0",
+                "symfony/polyfill-mbstring": "For UTF-8 if ext-mbstring disabled",
+                "symfony/process": "For Cli::exec() method only"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/defines.php"
+                ],
+                "psr-4": {
+                    "JBZoo\\Utils\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SmetDenis",
+                    "email": "denis@jbzoo.com",
+                    "role": "lead"
+                },
+                {
+                    "name": "Brandon Wamboldt",
+                    "email": "brandon.wamboldt@gmail.com"
+                },
+                {
+                    "name": "Luís Nóbrega",
+                    "email": "luis.barros.nobrega@gmail.com"
+                }
+            ],
+            "description": "A collection of useful PHP functions, mini classes and snippets that you need every day.",
+            "keywords": [
+                "array",
+                "cli",
+                "collection",
+                "command line",
+                "dates",
+                "email",
+                "env",
+                "environment",
+                "filesystem",
+                "filter",
+                "helper",
+                "helpers",
+                "http",
+                "image",
+                "mbstring",
+                "misc",
+                "serialize",
+                "slugify",
+                "string",
+                "timer",
+                "url",
+                "utility",
+                "utils"
+            ],
+            "time": "2020-03-11T23:02:22+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

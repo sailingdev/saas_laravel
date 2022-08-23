@@ -67,7 +67,7 @@
                             @else
 
                                 <div class="login-btn-area ml-5 mt-5 mt-lg-0">
-                                    <a class="btn wimax-btn" href="{{url('dashboard')}}">
+                                    <a class="btn wimax-btn" href="{{url('home')}}">
                                         {{__( sprintf( __("Hi, %s"), Auth::user()->fullname ) )}}
                                     </a>
                                 </div>

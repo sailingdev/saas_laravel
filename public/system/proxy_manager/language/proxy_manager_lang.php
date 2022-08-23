@@ -1,0 +1,24 @@
+<?php
+$lang["Success"] = "Success";
+$lang["Proxy manager"] = "Proxy manager";
+$lang["Proxy"] = "Proxy";
+$lang["Location"] = "Location";
+$lang["This proxy already exists"] = "This proxy already exists";
+$lang["Invalid or bad proxy"] = "Invalid or bad proxy";
+$lang["Please select an item to delete"] = "Please select an item to delete";
+$lang["Unknown"] = "Unknown";
+$lang["Search"] = "Search";
+$lang["Delete"] = "Delete";
+$lang["Are you sure to delete this items?"] = "Are you sure to delete this items?";
+$lang["Export"] = "Export";
+$lang["Add new"] = "Add new";
+$lang["Update"] = "Update";
+$lang["Back"] = "Back";
+$lang["Enable"] = "Enable";
+$lang["Disable"] = "Disable";
+$lang["Status"] = "Status";
+$lang["Proxy format username:password@ip:port OR ip:port"] = "Proxy format username:password@ip:port OR ip:port";
+$lang["Submit"] = "Submit";
+$lang["Configure proxies"] = "Configure proxies";
+$lang["User can add proxies"] = "User can add proxies";
+$lang["User can use the system proxies"] = "User can use the system proxies";

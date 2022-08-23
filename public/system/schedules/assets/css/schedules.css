@@ -1,0 +1,201 @@
+.schedules .monthly-day .monthly-event-indicator span{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.schedules .monthly-day.active{
+	background-color: rgba(85,120,235,.1);
+}
+
+.schedules .schedules-list{
+	margin-top: -25px;
+}
+
+.schedules .schedules-list .headline{
+	height: 75px;
+	margin-left: -25px;
+	margin-right: -25px;
+	border-bottom: 1px solid #f4f4f4;
+	text-align: center;
+	line-height: 75px;
+	margin-bottom: 15px;
+	padding: 0 25px;
+}
+
+.schedules .schedules-list .headline .title{
+	color: #5d78ff;
+	font-weight: 600;
+    text-transform: uppercase;
+}
+
+.schedules .schedules-list .headline .title span{
+	margin-left: 5px;
+}
+
+.schedules .calendar{
+	margin-top: -25px;
+	margin-bottom: -25px;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.schedules .schedules-list{
+	margin-bottom: -25px;
+}
+
+.schedules .schedules-list .item{
+	border: 1px solid #f4f4f4;
+	border-radius: 4px;
+	padding: 15px;
+	position: relative;
+	min-height: 152px;
+	margin-bottom: 15px;
+}
+
+.schedules .schedules-list .item .media{
+	width: 120px;
+	height: 120px;
+	border-radius: 4px;
+	background-color: rgba(85,120,235,.1);
+	position: absolute;
+	overflow: hidden;
+}
+
+.schedules .schedules-list .item .media .video-icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 15;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+}
+
+.schedules .schedules-list .item .media video{
+	height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    z-index: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-image: url(../img/loading.gif);
+    background-repeat: no-repeat;
+}
+
+.schedules .schedules-list .item .media .image{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background-position: center;
+	background-size: cover;
+}
+
+.schedules .schedules-list .item .media .link,
+.schedules .schedules-list .item .media .text{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background-position: center;
+	background-size: cover;
+	font-size: 50px;
+	color: #5d78ff;
+	line-height: 120px;
+	text-align: center;
+}
+
+.schedules .schedules-list .item .media .carousel-item{
+	width: 120px;
+	height: 120px;
+	border-radius: 4px;
+	background-position: center;
+	background-size: cover;
+}
+
+.schedules .schedules-list .item .media .carousel-inner{
+	border-radius: 4px;
+}
+
+.schedules .schedules-list .item .media .carousel-indicators{
+	margin-bottom: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.schedules .schedules-list .item .media .carousel-indicators li{
+	width: 7px;
+    height: 7px;
+}
+
+.schedules .schedules-list .item .info{
+	margin-left: 135px;
+    margin-right: 15px;
+}
+
+.schedules .schedules-list .item .info i{
+	color: #5d78ff;
+}
+
+.schedules .schedules-list .item .info span{
+	margin-left: 5px;
+}
+
+.schedules .schedules-list .item .info .name{
+	font-weight: 500;
+}
+
+.schedules .schedules-list .item .info .caption{
+	overflow: hidden;
+    height: 63px;
+    margin-top: 5px;
+    margin-bottom: 11px;
+    color: #74788d;
+}
+
+.schedules .schedules-list .headline .toolbar{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+.schedules .schedules-list .item .toolbar{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.schedules .schedules-list .toolbar .dropdown-toggle{
+	padding: 0
+}
+
+.schedules .schedules-list .toolbar .dropdown-toggle:after{
+	display: none;
+}
+
+.schedules .schedules-list .item .icon{
+	position: absolute;
+	z-index: 10;
+	background: transparent;
+	padding: 5px 9px;
+	border-radius: 4px 0 4px 0;
+	color: #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.schedules .schedules-list .item .status{
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: -15px;
+	margin-top: 15px;
+	padding: 5px;
+	border-radius: 0 0 4px 4px;
+}
