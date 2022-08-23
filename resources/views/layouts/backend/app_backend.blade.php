@@ -10,7 +10,7 @@
 
     <meta name="description" content="{{Helper::get_option('website_desc', '#1 Marketing Platform for Social Network')}}">
     <meta name="keywords" content="{{Helper::get_option('website_keywords', 'social network, marketing, brands, businesses, agencies, individuals')}}">
-    <link rel="icon" type="image/png" href="{{Helper::get_option('website_favicon', asset("themes/backend/default/assets/img/favicon.png"))}}" />
+    <link rel="icon" type="image/png" href="{{asset('themes/backend/default/assets/img/favicon12.png')}}" />
 
     <!--Css-->
     <link rel="stylesheet" type="text/css" href="{{asset('themes/backend/default/assets/fonts/line/line-awesome.min.css')}}">

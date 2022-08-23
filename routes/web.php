@@ -42,8 +42,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/caption','CaptionController@index');
     Route::get('/watermark','WatermarkController@index');
     Route::get('/user_manager','UserManagerController@index');
-
-
 });
 
 
