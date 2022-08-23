@@ -29,4 +29,8 @@ class WimaxController extends Controller
              return view('blog_detail', ['blog' => $blog]);
         }
     }
+
+    public function dashboard(){
+        return view('dashboard');
+    }
 }

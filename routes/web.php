@@ -27,6 +27,13 @@ Route::get('out', function (){
     Auth::logout();
 });
 
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard','WimaxController@dashboard');
+});
 
 
 

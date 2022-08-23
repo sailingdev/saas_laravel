@@ -174,7 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        \Biscolab\ReCaptcha\ReCaptchaServiceProvider::class
+        \Biscolab\ReCaptcha\ReCaptchaServiceProvider::class,
+        \Laravel\Socialite\SocialiteServiceProvider::class
 
     ],
 
@@ -228,7 +229,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Helper' => \App\Helper\Helper::class,
-        'Captcha' => \Biscolab\ReCaptcha\ReCaptchaServiceProvider::class
+        'Captcha' => \Biscolab\ReCaptcha\ReCaptchaServiceProvider::class,
+        'Socialite' => \Laravel\Socialite\Facades\Socialite::class
+
 
     ],
 

@@ -65,8 +65,9 @@
                             <img src="{{asset('themes/frontend/wimax/assets/img/core-img/google-logo.png')}}"> {{__("Log in with Google")}}
                         </a>
                     @endif
+
                     @if(Helper::get_option('facebook_login_status', 0) )
-                        <a class="btn wimax-btn btn-4 w-100 mt-15 btn-facebook" href="{{url("login/facebook")}}">
+                        <a class="btn wimax-btn btn-4 w-100 mt-15 btn-facebook" href="{{ url('/auth/redirect/facebook') }}">
                             <i class="fa fa-facebook"> </i> {{__("Log in with Facebook")}}
                         </a>
                     @endif

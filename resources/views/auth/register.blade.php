@@ -37,6 +37,28 @@
         div, h1, h2, h3, h4, h5, h6, p, span, label, input, button{
             font-family: "Segoe UI";
         }
+
+        .card span{
+            display: block;
+            line-height: 14px;
+            font-size: 10pt;
+        }
+        .card span.line-height-gray{
+            color: #5a6268;
+            line-height: 16px
+        }
+
+        @media only screen and (min-width: 763px) {
+            .margin-for-bottom {
+                margin-bottom: 90%;
+            }
+        }
+
+        @media only screen and (max-width: 762px) {
+            .margin-for-bottom {
+                margin-bottom: 5%;
+            }
+        }
     </style>
 @endsection
 @section('content')
@@ -129,16 +151,67 @@
                     <button type="submit" class="btn btn-primary btn-block text-uppercase">Signup</button>
                 </form>
             </div>
-            <div class="col-12 col-md-5 col-lg-5" style="background-position: top;
-                                                        background-repeat: no-repeat;
-                                                        background-size: cover;
-                                                        justify-content: space-between;
-                                                        background-image: url({{'themes/frontend/wimax/assets/img/bg-img/checkout-sidebar-background.svg'}});">
+            <div class="col-12 col-md-5 col-lg-5"
+                 style="background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 6.5%;
+                justify-content: space-between;
+                background-image: url({{'themes/frontend/wimax/assets/img/bg-img/checkout-sidebar-background.svg'}});">
+
+                <div class="card">
+                    <div class="card-body">
+                        <span class="text-uppercase" style="color: #e3761e">starter</span>
+                        <h4>14 day free trial</h4>
+
+                        <span class="font-weight-bold text-uppercase mt-3">seats</span>
+                        <span class="line-height-gray">2 seats</span>
+
+                        <span class="font-weight-bold text-uppercase mt-3">Inbound</span>
+                        <span class="line-height-gray">Unlimited conversations</span>
+
+                        <span class="font-weight-bold text-uppercase mt-3">Outbound</span>
+                        <span class="line-height-gray">1,000 people reached/mo</span>
+                    </div>
+                    <div class="card-footer">
+                        <strong>
+                            Due today
+                        </strong>
+                        <strong style="float: right">
+                            $0
+                        </strong>
+                    </div>
+                </div>
+
+                <p class="text-center mt-3 margin-for-bottom" style="font-size: 11pt;">
+                    All prices USD. Your total may also include usage charges and taxes, if applicable.
+                </p>
+
+                <div class="row text-center">
+                    <div class="col-md-4 col-12 col-sm-4">
+                        <i class='fa-solid fas fa-chart-bar'style='font-size:24px'></i>
+                        <p>
+                            Conversation Rate
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 col-sm-4">
+                        <i class='fas fa-chart-line' style='font-size:24px'></i>
+                        <p>
+                            Email Subscribers
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 col-12 col-sm-4">
+                        <i class="fas fa-chart-pie" style="font-size: 24px"></i>
+                        <p>Customer Engagement</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 @endsection
 
 @section('specific_js')
-
+{{--    <script src='https://kit.fontawesome.com/a076d05399.js'></script>--}}
+    <script src='{{asset('plugins/all.min.js')}}'></script>
 @stop

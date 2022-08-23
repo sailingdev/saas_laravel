@@ -5,7 +5,7 @@ function Core(){
         self.actionItem();
         self.actionMultiItem();
         self.actionForm();
-        self.actionLogin();
+        //self.actionLogin();
     	self.set_timezone();
     };
 
@@ -20,7 +20,7 @@ function Core(){
                 "Access-Control-Allow-Origin": "*"
             }
         }
-        
+
         $.ajax(settings).done(function (response) {
             var timezone = response.timezone;
             $.post(PATH+"timezone", {token:token, timezone:timezone}, function(){});
@@ -30,7 +30,7 @@ function Core(){
 
     this.actionItem= function(){
         $(document).on('click', ".actionItem", function(event) {
-            event.preventDefault();    
+            event.preventDefault();
             var that           = $(this);
             var action         = that.attr("href");
             var id             = that.data("id");
@@ -43,7 +43,7 @@ function Core(){
 
     this.actionMultiItem= function(){
         $(document).on('click', ".actionMultiItem", function(event) {
-            event.preventDefault();    
+            event.preventDefault();
             var that           = $(this);
             var form           = that.closest("form");
             var action         = that.attr("href");
@@ -57,34 +57,36 @@ function Core(){
 
     this.actionForm= function(){
         $(document).on('submit', ".actionForm", function(event) {
-            event.preventDefault();    
+            event.preventDefault();
             var that           = $(this);
             var action         = that.attr("action");
             var data           = that.serialize();
             var data           = data + '&' + $.param({token:token});
-            
+
             self.ajax_post(that, action, data, null);
         });
     };
 
-    this.actionLogin= function(){
-        $(document).on('submit', ".actionLogin", function(event) {
-            event.preventDefault();    
-            var that           = $(this);
-            var action         = that.attr("action");
-            var data           = that.serialize();
-            var data           = data + '&' + $.param({token:token});
-            
-            console.log("login data= ", data);
-            
-            $('.btn-no-loading').addClass('d-none');
-            $('.btn-loading').removeClass('d-none');
-            self.ajax_post(that, action, data, function(result){
-                $('.btn-no-loading').removeClass('d-none');
-                $('.btn-loading').addClass('d-none');
-            });
-        });
-    };
+    // this.actionLogin= function(){
+    //     $(document).on('submit', ".actionLogin", function(event) {
+    //         event.preventDefault();
+    //         var that           = $(this);
+    //         var action         = that.attr("action");
+    //         var data           = that.serialize();
+    //         var data           = data + '&' + $.param({token:token});
+    //
+    //         console.log("login data= ", data);
+    //
+    //         $('.btn-no-loading').addClass('d-none');
+    //         $('.btn-loading').removeClass('d-none');
+    //         self.ajax_post(that, action, data, function(result){
+    //             $('.btn-no-loading').removeClass('d-none');
+    //             $('.btn-loading').addClass('d-none');
+    //         });
+    //     });
+    // };
+
+
 
     this.ajax_post = function(that, action, data, _function){
         var confirm        = that.data("confirm");
@@ -119,7 +121,7 @@ function Core(){
             }
             that.addClass("disabled");
             $.post(action, data, function(result){
-                
+
                 //Check is object
                 if(typeof result != 'object'){
                     try {
