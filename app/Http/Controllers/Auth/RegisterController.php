@@ -54,7 +54,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:sp_users'],
             'password' => 'required',
             'confirm_password' => 'required|same:password',
-            'g-recaptcha-response' => 'required|captcha',
+//            'g-recaptcha-response' => 'required|captcha',
             'timezone' => ['required', 'string']
         ]);
     }

@@ -133,14 +133,14 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <span>{!! app('captcha')->display() !!}</span>
-                        @error('g-recaptcha-response')
-                        <div class="text-danger">
-                            {{$message}}
-                        </div>
-                        @enderror
-                    </div>
+{{--                    <div class="form-group">--}}
+{{--                        <span>{!! app('captcha')->display() !!}</span>--}}
+{{--                        @error('g-recaptcha-response')--}}
+{{--                        <div class="text-danger">--}}
+{{--                            {{$message}}--}}
+{{--                        </div>--}}
+{{--                        @enderror--}}
+{{--                    </div>--}}
 
 
                     <div class="form-group form-check">
