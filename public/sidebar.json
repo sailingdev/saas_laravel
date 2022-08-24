@@ -6,6 +6,18 @@
             "icon": "fas fa-home",
             "color": "#1ac958"
         },
+        "Analytics": {
+            "id": "analytics",
+            "name": "Analytics",
+            "icon": "fas fa-chart-line",
+            "color": "#1ac958"
+        },
+        "Platforms": {
+            "id": "platforms",
+            "name": "Platforms",
+            "icon": "fas fa-border-all",
+            "color": "#1ac958"
+        },
         "Dashboard": {
             "id": "dashboard",
             "name": "Dashboard",

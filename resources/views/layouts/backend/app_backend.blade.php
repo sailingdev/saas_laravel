@@ -188,27 +188,27 @@
     @yield('content')
 </div>
 </body>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/ckeditor/ckeditor.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/jquery-ui/jquery-ui.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/datetimepicker/jquery-ui-timepicker-addon.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/custom-scrollbar/custom-scrollbar.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/responsive-tab/responsive-tab.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/chartjs/chart.bundle.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/emojionearea/emojionearea.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/nicescroll/nicescroll.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/izitoast/js/izitoast.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/fancybox/jquery.fancybox.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/monthly/monthly.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/jquery.md5/jquery.md5.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/owl-carousel/js/owl.carousel.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/vtdropdown/vtdropdown.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/select/js/bootstrap-select.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/touch-punch/jquery.ui.touch-punch.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/ion.rangeslider/ion.rangeSlider.min.js')}}"></script>
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/ckeditor/ckeditor.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/jquery-ui/jquery-ui.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/datetimepicker/jquery-ui-timepicker-addon.min.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/custom-scrollbar/custom-scrollbar.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/responsive-tab/responsive-tab.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/chartjs/chart.bundle.min.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/emojionearea/emojionearea.min.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/nicescroll/nicescroll.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/izitoast/js/izitoast.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/fancybox/jquery.fancybox.min.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/monthly/monthly.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/jquery.md5/jquery.md5.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/owl-carousel/js/owl.carousel.min.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/vtdropdown/vtdropdown.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/select/js/bootstrap-select.min.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/touch-punch/jquery.ui.touch-punch.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/ion.rangeslider/ion.rangeSlider.min.js')}}"></script>--}}
 <script type="text/javascript" src="{{asset('plugins/watermark/core.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/js/layout.js')}}"></script>
-<script type="text/javascript" src="{{asset('themes/backend/default/assets/js/core.js')}}"></script>
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/js/layout.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/js/core.js')}}"></script>--}}
 
 <!--Javscript-->
 {{--<script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js"></script>--}}

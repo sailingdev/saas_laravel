@@ -45,6 +45,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/user_manager/index','UserManagerController@index');
     Route::get('/user_manager/report','UserManagerController@report');
     Route::post('/user_manager/report','UserManagerController@post_report');
+    Route::get('/platforms','PlatformsController@index');
+    Route::get('/analytics','AnalyticsController@index');
 
 });
 
