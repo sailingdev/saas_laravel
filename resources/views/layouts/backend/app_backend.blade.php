@@ -56,6 +56,7 @@
         var BASE  = '{{asset('')}}';
         var FORMAT_DATE = '{{Helper::date_show_js()}}';
         var FORMAT_DATETIME = '{{Helper::datetime_show_js()}}';
+        var LANGUAGE = '';
         var FILE_MANAGER_GOOGLE_API_KEY = 'AIzaSyC_ROwjrDpzSde2zwiQEFd_Y3U9Gmo6x6I';
         var FILE_MANAGER_GOOGLE_CLIENT_ID = '759264117371-e8r10bf8s0sl188fcn5e7etfiiig4ff4.apps.googleusercontent.com';
         var FILE_MANAGER_ONEDRIVE_API_KEY = '6c514944-11bd-4be1-aa05-fd6f94a78361';
@@ -139,6 +140,7 @@
             <span class="logo-small"><img src="{{asset('themes/backend/default/assets/img/logo.png')}}"></span>
             <span class="logo-full"><img src="{{asset('themes/backend/default/assets/img/logo12.png')}}"></span>
 
+
         </a>
     </div>
     <div class="menu">
@@ -204,9 +206,9 @@
 <script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/select/js/bootstrap-select.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/touch-punch/jquery.ui.touch-punch.js')}}"></script>
 <script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/ion.rangeslider/ion.rangeSlider.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('plugins/watermark/core.js')}}"></script>
 <script type="text/javascript" src="{{asset('themes/backend/default/assets/js/layout.js')}}"></script>
 <script type="text/javascript" src="{{asset('themes/backend/default/assets/js/core.js')}}"></script>
-
 
 <!--Javscript-->
 {{--<script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js"></script>--}}

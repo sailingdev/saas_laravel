@@ -2,6 +2,7 @@
 
 namespace App\Helper;
 
+use App\AccountManager;
 use App\Option;
 use App\Team;
 use Illuminate\Support\Facades\Auth;
@@ -368,5 +369,57 @@ class Helper
     static function class_main($index){
         return str_replace('_', '-', Helper::segment(1));
     }
+
+    static function _gt($key, $value = "", $team_id = 0){
+        if(Helper::_s("team_id")){
+            $team_id = _t("id");
+        }
+        if($team_id != 0){
+            $data = Team::where('id', $team_id)->first()->data;
+            $option = json_decode($data);
+            if(is_array($option) || is_object($option)){
+                $option = (array)$option;
+
+                if( isset($option[$key]) ){
+                    return $option[$key];
+                }else{
+                    $option[$key] = $value;
+                    Team::update(['data' => json_encode($option), 'id' => $team_id]);
+                    return $value;
+                }
+            }else{
+                $option = json_encode(array($key => $value));
+                Team::update(['data' => $option, 'id' => $team_id]);
+                return $value;
+            }
+        }
+    }
+
+
+    static function _gm($key, $value = "", $account_id = 0){
+
+        if($account_id != 0){
+            $data = AccountManager::where('id', $account_id)->first()->data;
+            $option = json_decode($data);
+
+            if(is_array($option) || is_object($option)){
+                $option = (array)$option;
+
+                if( isset($option[$key]) ){
+                    return $option[$key];
+                }else{
+                    $option[$key] = $value;
+                    AccountManager::update(['data' => json_encode($option), 'id' =>$account_id ]);
+                    return $value;
+                }
+            }else{
+                $option = json_encode(array($key => $value));
+                AccountManager::update(['data' => $option, "id" => $account_id]);
+                return $value;
+            }
+        }
+    }
+
+
 
 }

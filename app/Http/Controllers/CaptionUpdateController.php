@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FileManagerController extends Controller
+class CaptionUpdateController extends Controller
 {
     public function index(){
-        return view('backend.file_manager.filemanager');
+        return view('backend.caption.captionupdate');
     }
 }
