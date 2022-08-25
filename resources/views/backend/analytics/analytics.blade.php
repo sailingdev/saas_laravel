@@ -13,7 +13,6 @@
         </div>
     </div>
 
-
     <div class="content-two-column {{Helper::class_main(1)}}">
         <div class="column-two nicescroll" style="width: 100%; margin: 0">
 
@@ -71,7 +70,7 @@
                                 <div class="p-25 bg-solid-danger rounded">
                                     <div class="wrap-m">
                                         <div>
-                                            <div>PostEngagement</div>
+                                            <div>Post Engagement</div>
                                             <h3 class="success w-100">20</h3>
                                         </div>
                                         <div class="wrap-c">
@@ -192,8 +191,6 @@
                     </script>
                 </div>
             </div>
-
-
         </div>
     </div>
 @endsection
