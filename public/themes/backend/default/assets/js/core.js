@@ -500,7 +500,8 @@ function Core(){
                 xAxes: [{
                     categoryPercentage: 0.35,
                     barPercentage: 0.70,
-                    display: false,
+                    display: true,
+
                     gridLines: false,
                     ticks: {
                         display: true,

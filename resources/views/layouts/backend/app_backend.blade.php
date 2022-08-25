@@ -188,7 +188,7 @@
     @yield('content')
 </div>
 </body>
-{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/ckeditor/ckeditor.js')}}"></script>--}}
+<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/ckeditor/ckeditor.js')}}"></script>
 {{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>--}}
 {{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/jquery-ui/jquery-ui.js')}}"></script>--}}
 {{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/datetimepicker/jquery-ui-timepicker-addon.min.js')}}"></script>--}}
@@ -208,11 +208,13 @@
 {{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/plugins/ion.rangeslider/ion.rangeSlider.min.js')}}"></script>--}}
 <script type="text/javascript" src="{{asset('plugins/watermark/core.js')}}"></script>
 {{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/js/layout.js')}}"></script>--}}
-{{--<script type="text/javascript" src="{{asset('themes/backend/default/assets/js/core.js')}}"></script>--}}
+<script type="text/javascript" src="{{asset('themes/backend/default/assets/js/core.js')}}"></script>
 
 <!--Javscript-->
 {{--<script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js"></script>--}}
 {{--<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="e7j36y9a1jc468h"></script>--}}
 {{--<script type="text/javascript" src="//apis.google.com/js/client.js"></script>--}}
+
+@yield('specific_js')
 
 </html>
