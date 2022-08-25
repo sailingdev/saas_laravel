@@ -6,6 +6,12 @@
             "icon": "fas fa-home",
             "color": "#1ac958"
         },
+        "Dashboard": {
+            "id": "dashboard",
+            "name": "Dashboard",
+            "icon": "fas fa-desktop",
+            "color": "#1ac958"
+        },
         "Analytics": {
             "id": "analytics",
             "name": "Analytics",
@@ -18,10 +24,22 @@
             "icon": "fas fa-border-all",
             "color": "#1ac958"
         },
-        "Dashboard": {
-            "id": "dashboard",
-            "name": "Dashboard",
-            "icon": "fas fa-desktop",
+        "Team": {
+            "id": "team",
+            "name": "Team",
+            "icon": "fa fa-rocket",
+            "color": "#1ac958"
+        },
+        "Social Inbox": {
+            "id": "social_inbox",
+            "name": "Social Inbox",
+            "icon": "fa fa-inbox",
+            "color": "#1ac958"
+        },
+        "My Account": {
+            "id": "my_account",
+            "name": "My Account",
+            "icon": "far fa-user",
             "color": "#1ac958"
         },
         "Publish all": {
