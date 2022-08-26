@@ -83,21 +83,24 @@
     @include('backend.my_account.subheader')
     <div class="content-two-column {{Helper::class_main(1)}}">
         <div class="column-two nicescroll" style="width: 100%; margin: 0;">
-            <div>Manage your account</div>
+
+            <div class="text-center">
+                <i class="fas fa-gem fa-6x" style="color: #eed83f"></i>
+                <h3>Go <span class="badge badge-pill badge-success">Premium</span> with Vouchers & Credits</h3>
+            </div>
+
+
             <div class="card rounded mt-2">
                 <div class="card-body">
-                    <div class="row">
-                        <span class="p-10">
-                            <i class="fa fa-user fa-3x"></i>
-                        </span>
-                        <div class="col-md-3 pt-2">
-                            <strong>Name</strong><br>
-                            Johan Forsberg
-                        </div>
+                    <div class="row justify-content-center">
+                        <input class="form-control" style="width: 30%" type="text" autocomplete="off" placeholder="Enter Redeemable code">
+                    </div>
+
+                    <div class="row justify-content-center mt-2">
+                        <button class="btn btn-primary btn-sm">Redeem Code</button>
                     </div>
                 </div>
             </div>
-
 
 
         </div>

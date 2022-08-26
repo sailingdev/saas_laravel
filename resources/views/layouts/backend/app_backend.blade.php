@@ -145,8 +145,6 @@
         <a href="{{Helper::get_url("dashboard")}}">
             <span class="logo-small"><img src="{{asset('themes/backend/default/assets/img/logo.png')}}"></span>
             <span class="logo-full"><img src="{{asset('themes/backend/default/assets/img/logo12.png')}}"></span>
-
-
         </a>
     </div>
     <div class="menu">
