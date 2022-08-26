@@ -49,7 +49,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/analytics','AnalyticsController@index');
     Route::get('/team','TeamController@index');
     Route::get('/social_inbox','SocialInboxController@index');
-    Route::get('/my_account','MyAccountController@index');
+
+
+    Route::get('/my_account/profile','MyAccountController@profile');
+    Route::get('/my_account/pricing_bill','MyAccountController@pricing_bill');
+    Route::get('/my_account/redeem_code','MyAccountController@redeem_code');
+    Route::get('/my_account/invoice_history','MyAccountController@invoice_history');
 
 });
 

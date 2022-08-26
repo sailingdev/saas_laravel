@@ -45,6 +45,12 @@
     <link rel='stylesheet' type='text/css' href='{{asset('public/post/assets/css/post.css')}}'>
     <link rel='stylesheet' type='text/css' href='{{asset('public/twitter_post/assets/css/twitter_post.css')}}'>
 
+    <style>
+        .column-three.nicescroll, .column-one.nicescroll, .column-two.nicescroll{
+            background: #fafafa;
+        }
+    </style>
+
     @yield('specific_css')
 
     <!--Jquery-->
@@ -66,11 +72,11 @@
                 setTimeout(function(){
                     document.getElementById('interactive');
                     document.getElementById('loading-overplay').style.opacity ="0";
-                },500);
+                },100);
                 setTimeout(function(){
                     document.getElementById('loading-overplay').style.display ="none";
                     document.getElementById('loading-overplay').style.opacity ="1";
-                },1000);
+                },200);
             }
         }
     </script>

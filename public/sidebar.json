@@ -37,7 +37,7 @@
             "color": "#1ac958"
         },
         "My Account": {
-            "id": "my_account",
+            "id": "my_account/profile",
             "name": "My Account",
             "icon": "far fa-user",
             "color": "#1ac958"
