@@ -13,7 +13,7 @@
                         <a class="{{Request::is('my_account/profile')? 'menu-item-active':''}}" href="{{url('my_account/profile')}}" >Profile</a>
                         <a class="{{Request::is('my_account/pricing_bill')? 'menu-item-active':''}}" href="{{url('my_account/pricing_bill')}}" >Pricing & billing</a>
                         <a class="{{Request::is('my_account/redeem_code')? 'menu-item-active':''}}" href="{{url('my_account/redeem_code')}}" >Redeem Code</a>
-                        <a class="{{Request::is('my_account/invoice_history')? 'menu-item-active':''}}" href="{{url('my_account/invoice_history')}}" >Invoice History</a>
+{{--                        <a class="{{Request::is('my_account/invoice_history')? 'menu-item-active':''}}" href="{{url('my_account/invoice_history')}}" >Invoice History</a>--}}
                     </div>
                 </div>
             </div>
