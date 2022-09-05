@@ -109,38 +109,50 @@
                 </div>
             </div>
         </div>
+
         <div class="column-two nicescroll">
-            <h3 class="text-info fs-18 m-b-25 "><i class="far fa-chart-bar"></i> All report</h3>
+            <?php
+            $report_list = json_decode(file_get_contents(asset('sidebar.json')), true)['2'];
+            $module_name = "facebook_post";
+
+            $successed = Helper::schedule_report(Helper::segment(3), "all", 3);
+            $failed = Helper::schedule_report(Helper::segment(3), "all", 4);
+
+            $success_total = 0;
+            $error_total = 0;
+            if(!empty($report_list)){
+                foreach ($report_list as $report) {
+                    if( isset($report['sub_menu']) && !empty($report['sub_menu']) ){
+                        foreach ($report['sub_menu'] as $key => $module_name) {
+                            if(isset($module_name["id"])){
+                                $success_total += Helper::_gt($module_name["id"]."_success_count", 0);
+                                $error_total += Helper::_gt($module_name["id"]."_error_count", 0);
+                            }
+                        }
+                    }
+                }
+            }
+            ?>
+
             <div class="row">
                 <div class="col-lg-12 col-sm-12 m-b-25">
                     <div class="card rounded">
                         <div class="card-header wrap-m">
-                            <div class="card-title wrap-c text-info"><i class="fas fa-caret-right p-r-5"></i> Last 30
-                                days
-                            </div>
+                            <div class="card-title wrap-c text-info"><i class="fas fa-caret-right p-r-5"></i> Last 30 days</div>
                         </div>
                         <div class="card-body h-300">
-                            <div class="chartjs-size-monitor">
-                                <div class="chartjs-size-monitor-expand">
-                                    <div class=""></div>
-                                </div>
-                                <div class="chartjs-size-monitor-shrink">
-                                    <div class=""></div>
-                                </div>
-                            </div>
-                            <canvas id="line-stacked-area" height="390"
-                                    style="display: block; height: 260px; width: 843px;" width="1264"
-                                    class="chartjs-render-monitor"></canvas>
+                            <canvas id="line-stacked-area" height="300"></canvas>
                         </div>
                         <script type="text/javascript">
-                            $(function () {
-                                setTimeout(function () {
+                            $(function(){
+                                setTimeout(function(){
                                     Core.lineChart(
                                         "line-stacked-area",
-                                        ['2022-07-24', '2022-07-25', '2022-07-26', '2022-07-27', '2022-07-28', '2022-07-29', '2022-07-30', '2022-07-31', '2022-08-01', '2022-08-02', '2022-08-03', '2022-08-04', '2022-08-05', '2022-08-06', '2022-08-07', '2022-08-08', '2022-08-09', '2022-08-10', '2022-08-11', '2022-08-12', '2022-08-13', '2022-08-14', '2022-08-15', '2022-08-16', '2022-08-17', '2022-08-18', '2022-08-19', '2022-08-20', '2022-08-21', '2022-08-22'],
+                                        <?=$successed->date?>,
                                         [
-                                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+                                            <?=$successed->value?>,
+                                            <?=$failed->value?>
+                                        ],
                                         [
                                             "Successed",
                                             "Failed"
@@ -158,7 +170,7 @@
                     <div class="p-25 bg-solid-info rounded">
                         <div class="wrap-m">
                             <div>
-                                <h3 class="success w-100">0</h3>
+                                <h3 class="success w-100">{{$success_total}}</h3>
                                 <div>Successed</div>
                             </div>
                             <div class="wrap-c">
@@ -171,7 +183,7 @@
                     <div class="p-25 bg-solid-warning rounded">
                         <div class="wrap-m">
                             <div>
-                                <h3 class="danger">0</h3>
+                                <h3 class="danger">{{$error_total}}</h3>
                                 <span>Failed</span>
                             </div>
                             <div class="wrap-c">
@@ -184,7 +196,7 @@
                     <div class="p-25 bg-solid-success rounded">
                         <div class="wrap-m">
                             <div>
-                                <h3 class="primary">0</h3>
+                                <h3 class="primary">{{$error_total + $success_total}}</h3>
                                 <span>Total</span>
                             </div>
                             <div class="wrap-c">
@@ -196,4 +208,8 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('specific_js')
+{{--    <script type="text/javascript" src="{{asset('themes/backend/default/assets/js/core.js')}}"></script>--}}
 @endsection

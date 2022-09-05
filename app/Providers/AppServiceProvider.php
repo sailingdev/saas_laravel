@@ -26,10 +26,10 @@ class AppServiceProvider extends ServiceProvider
     {
         View::share('key', 'value');
 
+        define("NOW", date("Y-m-d H:i:s"));
         $menu_posts = [];
         $menu_addons = [];
         $pricing_menu = [];
-
 
 
     }

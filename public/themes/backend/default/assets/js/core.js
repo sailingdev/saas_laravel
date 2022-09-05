@@ -21,7 +21,7 @@ function Core(){
                     that.addClass('checked');
                 }else{
                     $('input.check-item:checkbox').prop('checked',false);
-                    that.removeClass('checked');        
+                    that.removeClass('checked');
                 }
             }
             return false;
@@ -36,7 +36,7 @@ function Core(){
                     that.addClass('checked');
                 }else{
                     that.parents(".check-wrap-all").find("input.check-item:checkbox").prop('checked',false);
-                    that.removeClass('checked');        
+                    that.removeClass('checked');
                 }
             }
             return false;
@@ -60,7 +60,7 @@ function Core(){
                 }else{
                     parent.find("input[type='checkbox']").prop('checked', false).attr('checked', 'checked');
                     parent.find("input[type='radio']").prop('checked', false).attr('checked', 'checked');
-                    parent.removeClass('active');        
+                    parent.removeClass('active');
                 }
 
             }else{
@@ -69,7 +69,7 @@ function Core(){
                     parent.addClass('active').siblings().removeClass('active');
                 }else{
                     parent.find("input[type='radio']").prop('checked', false).attr('checked', 'checked');
-                    parent.removeClass('active');        
+                    parent.removeClass('active');
                 }
             }
         });
@@ -95,7 +95,7 @@ function Core(){
                 }else{
                     parent.find("input[type='checkbox']").prop('checked', false).attr('checked', 'checked');
                     parent.find("input[type='radio']").prop('checked', false).attr('checked', 'checked');
-                    parent.removeClass('active');        
+                    parent.removeClass('active');
                 }
 
             }else{
@@ -104,7 +104,7 @@ function Core(){
                     parent.addClass('active').siblings().removeClass('active');
                 }else{
                     parent.find("input[type='radio']").prop('checked', false).attr('checked', 'checked');
-                    parent.removeClass('active');        
+                    parent.removeClass('active');
                 }
             }
         });
@@ -183,7 +183,7 @@ function Core(){
                 $('.datetime').datetimepicker( 'setDate', new Date() );
             }
 
-            $('[id^="ui-datepicker-div"]').wrapAll('<div class="ui-datepicker-wrap"></div>'); 
+            $('[id^="ui-datepicker-div"]').wrapAll('<div class="ui-datepicker-wrap"></div>');
         }
     };
 
@@ -213,22 +213,25 @@ function Core(){
         }
     };
 
+
     this.actionItem= function(){
         $(document).on('click', ".actionItem", function(event) {
-            event.preventDefault();    
+            //event.preventDefault();
             var that           = $(this);
             var action         = that.attr("href");
             var id             = that.data("id");
-            var data           = $.param({token:token, id: id});
+            var data           = $.param({_token:token, id: id});
 
             self.ajax_post(that, action, data, null);
-            return false;
+            //return false;
         });
     };
 
+
+
     this.actionMultiItem= function(){
         $(document).on('click', ".actionMultiItem", function(event) {
-            event.preventDefault();    
+            event.preventDefault();
             var that           = $(this);
             var form           = that.closest("form");
             var action         = that.attr("href");
@@ -242,15 +245,17 @@ function Core(){
 
     this.actionForm= function(){
         $(document).on('submit', ".actionForm", function(event) {
-            event.preventDefault();    
+            event.preventDefault();
             var that           = $(this);
             var action         = that.attr("action");
             var data           = that.serialize();
             var data           = data + '&' + $.param({token:token});
-            
+
             self.ajax_post(that, action, data, null);
         });
     };
+
+
 
     this.ajax_post = function(that, action, data, _function){
         var confirm        = that.data("confirm");
@@ -267,101 +272,101 @@ function Core(){
         var type           = that.data("result");
         var object         = false;
 
-        if(type == undefined){
-            type = 'json';
-        }
-
-        if(confirm != undefined){
-            if(!window.confirm(confirm)) return false;
-        }
-
-        if(history_url != undefined){
-            history.pushState(null, '', history_url);
-        }
-
-        if(!that.hasClass("disabled")){
-            if(hide_overplay == undefined || hide_overplay == 1){
-                self.overplay();
-            }
-            that.addClass("disabled");
-            $.post(action, data, function(result){
-                
-                //Check is object
-                if(typeof result != 'object'){
-                    try {
-                        result = $.parseJSON(result);
-                        object = true;
-                    } catch (e) {
-                        object = false;
-                    }
-                }else{
-                    object = true;
-                }
-
-                //Run function
-                if(_function != null){
-                    _function.apply(this, [result]);
-                }
-
-                //Callback function
-                if(result.callback != undefined){
-                    $("body").append(result.callback);
-                }
-
-                //Callback
-                if(callback != undefined){
-                    var fn = window[callback];
-                    if (typeof fn === "function") fn(result);
-                }
-
-                //Using for update
-                if(transfer != undefined){
-                    that.removeClass("tag-success tag-danger").addClass(result.tag).text(result.text);
-                }
-
-                //Add content
-                if(content != undefined && object == false){
-                    if(append_content != undefined){
-                        $("."+content).append(result);
-                    }else{
-                        $("."+content).html(result);
-                    }
-                }
-
-                //Call After
-                if(call_after != undefined){
-                    eval(call_after);
-                }
-
-                //Remove Element
-                if(remove != undefined){
-                    that.parents('.'+remove).remove();
-                }
-
-                //Hide Loading
-                self.overplay(true);
-                that.removeClass("disabled");
-
-                //Redirect
-                self.redirect(rediect, result.status);
-
-                //Message
-                if(result.status != undefined){
-                    switch(type_message){
-                        case "text":
-                            self.notify(result.message, result.status);
-                            break;
-
-                        default:
-                            self.notify(result.message, result.status);
-                            break;
-                    }
-                }
-
-            }, type).fail(function() {
-                that.removeClass("disabled");
-            });
-        }
+        // if(type == undefined){
+        //     type = 'json';
+        // }
+        //
+        // if(confirm != undefined){
+        //     if(!window.confirm(confirm)) return false;
+        // }
+        //
+        // if(history_url != undefined){
+        //     history.pushState(null, '', history_url);
+        // }
+        //
+        // if(!that.hasClass("disabled")){
+        //     if(hide_overplay == undefined || hide_overplay == 1){
+        //         self.overplay();
+        //     }
+        //     that.addClass("disabled");
+        //     $.post(action, data, function(result){
+        //
+        //         //Check is object
+        //         if(typeof result != 'object'){
+        //             try {
+        //                 result = $.parseJSON(result);
+        //                 object = true;
+        //             } catch (e) {
+        //                 object = false;
+        //             }
+        //         }else{
+        //             object = true;
+        //         }
+        //
+        //         //Run function
+        //         if(_function != null){
+        //             _function.apply(this, [result]);
+        //         }
+        //
+        //         //Callback function
+        //         if(result.callback != undefined){
+        //             $("body").append(result.callback);
+        //         }
+        //
+        //         //Callback
+        //         if(callback != undefined){
+        //             var fn = window[callback];
+        //             if (typeof fn === "function") fn(result);
+        //         }
+        //
+        //         //Using for update
+        //         if(transfer != undefined){
+        //             that.removeClass("tag-success tag-danger").addClass(result.tag).text(result.text);
+        //         }
+        //
+        //         //Add content
+        //         if(content != undefined && object == false){
+        //             if(append_content != undefined){
+        //                 $("."+content).append(result);
+        //             }else{
+        //                 $("."+content).html(result);
+        //             }
+        //         }
+        //
+        //         //Call After
+        //         if(call_after != undefined){
+        //             eval(call_after);
+        //         }
+        //
+        //         //Remove Element
+        //         if(remove != undefined){
+        //             that.parents('.'+remove).remove();
+        //         }
+        //
+        //         //Hide Loading
+        //         self.overplay(true);
+        //         that.removeClass("disabled");
+        //
+        //         //Redirect
+        //         self.redirect(rediect, result.status);
+        //
+        //         //Message
+        //         if(result.status != undefined){
+        //             switch(type_message){
+        //                 case "text":
+        //                     self.notify(result.message, result.status);
+        //                     break;
+        //
+        //                 default:
+        //                     self.notify(result.message, result.status);
+        //                     break;
+        //             }
+        //         }
+        //
+        //     }, type).fail(function() {
+        //         that.removeClass("disabled");
+        //     });
+        // }
 
         return false;
     };
@@ -483,10 +488,10 @@ function Core(){
                 mode: 'nearest',
                 bodySpacing: 5,
                 yPadding: 10,
-                xPadding: 10, 
+                xPadding: 10,
                 caretPadding: 0,
                 displayColors: false,
-                titleFontColor: '#ffffff', 
+                titleFontColor: '#ffffff',
                 cornerRadius: 4,
                 footerSpacing: 0,
                 titleSpacing: 0
@@ -495,7 +500,8 @@ function Core(){
                 xAxes: [{
                     categoryPercentage: 0.35,
                     barPercentage: 0.70,
-                    display: false,
+                    display: true,
+
                     gridLines: false,
                     ticks: {
                         display: true,
@@ -567,7 +573,7 @@ function Core(){
                     pointRadius: 1,
                     pointBorderWidth: 2,
                     pointHoverBorderWidth: 2,
-                    //lineTension: 0.6,  
+                    //lineTension: 0.6,
                 });
             }
         }
@@ -598,7 +604,7 @@ function Core(){
             }catch(err) {
               var lang = $.parseJSON( JSON.stringify(lang) );
             }
-            
+
             var key = $.md5(text);
             if( lang[key] != undefined ){
                 return lang[key];

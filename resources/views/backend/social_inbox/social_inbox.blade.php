@@ -6,12 +6,11 @@
                 <div class="wrap-c">
                     <button type="button" class="btn btn-label-info m-r-10 subheader-toggle"><i class="fas fa-bars"></i>
                     </button>
-                    <h3 class="title"><i class="fab fa-twitter text-info" style="color: #1ac958"></i> Twitter Post</h3>
+                    <h3 class="title"><i class="fa fa-inbox text-info" style="color: #1ac958"></i> Social Inbox</h3>
                 </div>
             </div>
         </div>
     </div>
-
 
 
 @endsection

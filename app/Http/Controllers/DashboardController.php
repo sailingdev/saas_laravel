@@ -13,6 +13,6 @@ class DashboardController extends Controller
         $accounts = AccountManager::where('ids', $ids)
             ->where('team_id', $team_id)
             ->where('status', 1)->get();
-        return view('backend.dashboard');
+        return view('backend.dashboard.dashboard');
     }
 }

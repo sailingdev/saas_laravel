@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class FacebookPostController extends Controller
 {
     public function index(){
-        return view('backend.facebookpost');
+        return view('backend.facebookpost.facebookpost');
     }
 }
